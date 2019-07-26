@@ -1,0 +1,378 @@
+2019-07-18 09:48:25.695 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.792 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.792 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.808 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.809 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.809 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.896 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.896 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.896 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.901 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.901 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.901 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.973 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.973 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.973 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.978 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.978 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:48:25.978 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.484 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.523 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.523 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.533 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.533 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.533 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.614 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.615 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.615 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.620 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.620 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.620 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.691 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.691 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.691 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:50:20.698 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.185 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.217 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.218 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.225 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.226 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.226 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.338 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.338 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.338 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.343 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.343 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.343 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.402 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.402 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.402 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.406 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.406 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.407 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.456 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.457 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 09:52:15.457 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.339 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.424 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.425 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.466 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.466 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.466 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.578 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.579 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.579 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.583 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.583 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.583 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.673 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.673 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.673 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.684 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.684 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:21:56.684 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.216 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.247 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.248 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.255 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.255 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.255 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.378 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.378 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.378 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.383 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.383 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.383 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.441 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.441 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.441 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.447 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.447 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.447 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.491 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.491 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.491 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.497 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.498 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 10:22:47.498 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.857 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.917 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.918 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.931 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.931 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:15.931 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.107 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.107 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.107 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.114 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.114 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.114 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.220 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.220 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.220 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.229 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.229 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:17:16.229 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.579 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.610 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.610 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.618 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.618 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.618 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.729 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.729 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.729 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.733 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.733 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.733 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.791 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.791 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.791 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.815 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.815 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.815 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.867 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.868 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.869 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.884 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.885 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:20:43.885 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.491 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.528 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.528 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.535 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.536 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.536 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.546 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.546 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.546 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.696 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.696 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.696 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.701 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.701 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.701 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.706 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.706 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.706 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.750 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.750 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.750 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.756 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.756 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.756 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.761 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.761 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.761 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.835 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.835 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.835 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 14:34:09.840 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.841 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.841 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.845 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.845 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:34:09.846 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.452 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.457 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.457 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.457 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.517 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.518 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.518 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.526 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.526 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.526 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.589 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.589 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.589 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.594 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.594 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:39:59.594 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:48.991 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.047 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.047 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.052 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.052 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.052 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.158 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.158 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.158 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.166 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.166 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.166 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.254 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.254 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.254 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.258 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.258 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:48:49.258 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:13.987 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.028 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.028 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.036 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.036 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.036 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.107 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.107 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.108 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.114 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.114 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.115 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.194 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.195 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.195 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.199 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.200 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 14:54:14.200 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.145 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.218 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.218 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.262 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.262 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.262 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.383 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.383 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.383 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.390 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.390 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.390 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.496 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.496 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.497 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.501 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.501 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 15:37:03.501 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.898 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.947 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.947 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.949 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.950 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.950 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.993 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.994 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.994 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.994 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.994 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:54.994 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.003 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.003 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.003 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.004 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.004 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:02:55.004 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.450 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.509 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.510 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.529 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.529 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.529 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.681 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.681 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.681 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.686 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.687 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.687 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.773 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.773 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.774 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:37:46.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.257 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.257 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.257 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.262 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.262 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.262 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.266 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.267 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.267 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.331 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.331 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.331 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.336 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.336 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.336 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.340 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.341 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.341 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.396 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.396 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.396 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.401 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.402 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.402 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.407 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.408 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.408 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.475 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.475 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.475 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:39:17.480 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.480 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.480 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.486 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.487 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:39:17.487 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.872 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.905 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.905 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.909 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.910 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:47.910 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.005 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.006 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.006 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.010 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.010 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.010 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.078 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.078 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.079 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:48.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.074 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.074 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.074 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.078 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.078 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.078 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.084 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.151 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.151 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.151 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.156 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.156 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.156 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.164 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.165 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.165 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.236 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.236 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.236 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.240 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.240 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.240 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.244 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.244 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.244 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.302 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.302 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.302 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-07-18 16:40:54.306 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.306 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.307 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.310 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.311 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-07-18 16:40:54.311 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.

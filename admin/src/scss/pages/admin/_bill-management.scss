@@ -1,0 +1,15 @@
+
+.bill-modal {
+  .bill-print {
+    padding: 6px;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    button {
+      margin: 0px 5px;
+    }
+  }
+}

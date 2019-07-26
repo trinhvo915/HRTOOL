@@ -1,0 +1,24 @@
+2019-07-10 14:20:24.679 +07:00 [Error] Error when dispatching '"OnConnectedAsync"' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.HashSet`1.AddIfNotPresent(T value)
+   at System.Collections.Generic.HashSet`1.Add(T item)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.OnConnectedAsync() in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2019-07-10 14:20:24.792 +07:00 [Error] Error when dispatching '"OnConnectedAsync"' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.HashSet`1.AddIfNotPresent(T value)
+   at System.Collections.Generic.HashSet`1.Add(T item)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.OnConnectedAsync() in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2019-07-10 14:20:24.793 +07:00 [Error] Error when dispatching '"OnConnectedAsync"' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.HashSet`1.AddIfNotPresent(T value)
+   at System.Collections.Generic.HashSet`1.Add(T item)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.OnConnectedAsync() in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2019-07-10 16:48:40.455 +07:00 [Error] Failed connection handshake.
+2019-07-10 16:48:40.593 +07:00 [Error] Failed connection handshake.
+2019-07-10 16:48:40.594 +07:00 [Error] Failed connection handshake.

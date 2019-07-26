@@ -1,0 +1,17 @@
+.label-input {
+  color: #e4e5e6;
+}
+.custom-form-coltrol {
+  border: 1px solid #c4c4c4;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+.form-wrapper {
+  width: 100%;
+}

@@ -1,0 +1,180 @@
+2019-07-15 13:30:32.124 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:30:32.199 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:30:32.201 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:31:26.049 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:31:26.050 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:31:26.051 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:36:48.183 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:36:48.387 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:36:48.388 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:39:04.175 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:39:04.179 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:39:04.180 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:43:22.599 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:43:22.600 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:43:22.601 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:48:32.814 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:48:32.818 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)
+2019-07-15 13:48:32.819 +07:00 [Error] Failed to invoke hub method '"sendUpdate"'.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.Contains[TSource](IEnumerable`1 source, TSource value)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.<>c__DisplayClass5_0.<sendUpdate>b__0(Guid x) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at System.Linq.Enumerable.WhereArrayIterator`1.ToArray()
+   at Orient.Base.Net.Core.Api.Core.Business.Services.Hubs.NotificationHub.sendUpdate(String nameSender, Guid[] IdUsers, Guid[] IdUserBefores, String secalendarDescription, String type) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\Hubs\NotificationHub.cs:line 55
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteHubMethod(ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.Invoke(HubMethodDescriptor descriptor, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamedInvocation)

@@ -1,0 +1,39 @@
+.product-detail-field {
+  padding: 5px 0;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.group-action {
+  height: 55px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  .dropdown-toggle{
+    height: 29px;
+  }
+}
+
+.topics-container {
+  padding-top: 20px;
+}
+
+.image-topic-wrapper {
+  padding-bottom: 30px;
+}
+
+.crop-image-border {
+  width: 204px;
+  height: 204px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  text-align: center;
+
+  .crop-area{
+    width: 100%;
+    height: 100%;
+  }
+}

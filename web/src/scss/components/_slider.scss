@@ -1,0 +1,149 @@
+.flex-wrap {
+  padding-bottom: 20px;
+}
+
+.swiper-container {
+  height: 20rem;
+  width: 100%;
+}
+
+.slide-wraper {
+  max-width: 240px;
+  max-height: 240px;
+  border: solid 1px $primary;
+}
+
+.large-swipper-container {
+  height: 22rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.swiper-slide {
+  max-height: 20rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.buttons-list {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide-item {
+  height: 15rem;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary;
+}
+
+/* CART CHOOSE FRAME */
+.choose-frame {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.choose-frame .btn-sm-primay:nth-child(2) {
+  width: 50%;
+}
+
+.increate-frame,
+.descrease-frame {
+  width: 50px;
+  min-width: 50px;
+  padding: 0 !important;
+}
+
+.total-frame {
+  margin: 0 5px;
+  padding: 0 10px;
+  border: solid 1px #e05140;
+  border-radius: 5px;
+}
+
+.frame-confirm {
+  padding: 5px 0;
+}
+
+/* FEEDBACK SECTION */
+.feedback-wrapper {
+  margin: 0 10px;
+}
+
+.feedback-info {
+  /* padding-top: 10px; */
+  text-align: center;
+  font-size: 14px;
+}
+
+.author-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-weight: bold;
+}
+.author-feedback {
+  padding-left: 5px;
+}
+.sort-feeback {
+  color: $primary;
+}
+
+.wrapper-image,
+.wrapper-image-captured {
+  width: 214px !important;
+  height: 214px !important;
+  padding: 7px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 1px 1px 20px #000;
+}
+
+.wrapper-image-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px !important;
+  height: 200px !important;
+  background-color: $background;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.image-rendered {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.box-frame {
+  width: auto !important;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: $primary;
+}

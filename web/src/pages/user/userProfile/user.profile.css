@@ -1,0 +1,37 @@
+.profile_img img {
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_img{
+    background-color: #20a8d814;
+    /* background-color: #ebebeb; */
+    padding: 25px 20px;
+    font-size: 16px;
+    border-radius: 5% 0 0 5%;
+}
+
+.profile-head h3 {
+    color: #20a8d8;
+    margin-left: 120px
+}
+
+.line{
+    width: 70%;
+}
+
+.line_header{
+    width: 100%
+}
+
+.group_info{
+    background-color: #20a8d814;
+    /* background-color: #ebebeb; */
+    padding: 20px 15px;
+    font-size: 16px;
+    border-radius: 0 5% 5% 0;
+}

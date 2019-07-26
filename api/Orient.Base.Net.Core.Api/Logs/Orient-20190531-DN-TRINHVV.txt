@@ -1,0 +1,446 @@
+2019-05-31 15:53:06.667 +07:00 [Error] Failed executing DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Job] ADD CONSTRAINT [FK_Job_User_ReporterId] FOREIGN KEY ([ReporterId]) REFERENCES [User] ([Id]) ON DELETE CASCADE;"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Job_User_ReporterId' on table 'Job' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:b7d4c09c-006f-4c80-9cc7-969c844befbd
+Error Number:1785,State:0,Class:16
+2019-05-31 15:53:06.745 +07:00 [Error] Failed executing DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Job] ADD CONSTRAINT [FK_Job_User_ReporterId] FOREIGN KEY ([ReporterId]) REFERENCES [User] ([Id]) ON DELETE CASCADE;"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Job_User_ReporterId' on table 'Job' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:b7d4c09c-006f-4c80-9cc7-969c844befbd
+Error Number:1785,State:0,Class:16
+2019-05-31 15:57:11.468 +07:00 [Error] Failed executing DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Job] ADD CONSTRAINT [FK_Job_User_ReporterId] FOREIGN KEY ([ReporterId]) REFERENCES [User] ([Id]) ON DELETE CASCADE;"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Job_User_ReporterId' on table 'Job' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:d07b0425-c18e-42a8-a67c-fdd0189fcada
+Error Number:1785,State:0,Class:16
+2019-05-31 15:57:11.543 +07:00 [Error] Failed executing DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Job] ADD CONSTRAINT [FK_Job_User_ReporterId] FOREIGN KEY ([ReporterId]) REFERENCES [User] ([Id]) ON DELETE CASCADE;"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Job_User_ReporterId' on table 'Job' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:d07b0425-c18e-42a8-a67c-fdd0189fcada
+Error Number:1785,State:0,Class:16
+2019-05-31 16:00:50.368 +07:00 [Error] Failed executing DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [UserInJob] DROP CONSTRAINT [FK_UserInJob_User_AssigneeId];"
+System.Data.SqlClient.SqlException (0x80131904): 'FK_UserInJob_User_AssigneeId' is not a constraint.
+Could not drop constraint. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:7441d9d6-7878-48f3-950c-e4910726e4a4
+Error Number:3728,State:1,Class:16
+2019-05-31 16:00:50.440 +07:00 [Error] Failed executing DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [UserInJob] DROP CONSTRAINT [FK_UserInJob_User_AssigneeId];"
+System.Data.SqlClient.SqlException (0x80131904): 'FK_UserInJob_User_AssigneeId' is not a constraint.
+Could not drop constraint. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:7441d9d6-7878-48f3-950c-e4910726e4a4
+Error Number:3728,State:1,Class:16
+2019-05-31 16:22:17.371 +07:00 [Error] Failed executing DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [CalendarType] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] nvarchar(512) NOT NULL,
+    CONSTRAINT [PK_CalendarType] PRIMARY KEY ([Id])
+);"
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'CalendarType' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:c04e4c36-d822-4324-a872-81a3a0f28586
+Error Number:2714,State:6,Class:16
+2019-05-31 16:22:17.429 +07:00 [Error] Failed executing DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [CalendarType] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] nvarchar(512) NOT NULL,
+    CONSTRAINT [PK_CalendarType] PRIMARY KEY ([Id])
+);"
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'CalendarType' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:c04e4c36-d822-4324-a872-81a3a0f28586
+Error Number:2714,State:6,Class:16
+2019-05-31 16:23:37.783 +07:00 [Error] Failed executing DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:994d7710-9764-456c-843c-bb9dea0f36b1
+Error Number:1785,State:0,Class:16
+2019-05-31 16:23:37.843 +07:00 [Error] Failed executing DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:994d7710-9764-456c-843c-bb9dea0f36b1
+Error Number:1785,State:0,Class:16
+2019-05-31 16:33:05.514 +07:00 [Error] Failed executing DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:4e46eaf6-3975-43af-acc8-58668b2b0875
+Error Number:1785,State:0,Class:16
+2019-05-31 16:33:05.593 +07:00 [Error] Failed executing DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:4e46eaf6-3975-43af-acc8-58668b2b0875
+Error Number:1785,State:0,Class:16
+2019-05-31 16:37:15.585 +07:00 [Error] Failed executing DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [UserInJob] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserInJob] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserInJob_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserInJob_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_UserInJob_User_UserId' on table 'UserInJob' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:ea5c3edd-4941-493f-b473-760ca376507d
+Error Number:1785,State:0,Class:16
+2019-05-31 16:37:15.650 +07:00 [Error] Failed executing DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [UserInJob] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserInJob] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserInJob_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserInJob_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_UserInJob_User_UserId' on table 'UserInJob' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:ea5c3edd-4941-493f-b473-760ca376507d
+Error Number:1785,State:0,Class:16
+2019-05-31 17:00:09.814 +07:00 [Error] Failed executing DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([UserId], [JobId]),
+    CONSTRAINT [AK_Comment_Id] UNIQUE ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:92ed9a25-c17a-488f-84eb-9b36233c417f
+Error Number:1785,State:0,Class:16
+2019-05-31 17:00:09.879 +07:00 [Error] Failed executing DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Comment] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Content] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Comment] PRIMARY KEY ([UserId], [JobId]),
+    CONSTRAINT [AK_Comment_Id] UNIQUE ([Id]),
+    CONSTRAINT [FK_Comment_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Comment_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_Comment_User_UserId' on table 'Comment' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:92ed9a25-c17a-488f-84eb-9b36233c417f
+Error Number:1785,State:0,Class:16
+2019-05-31 17:02:54.204 +07:00 [Error] Failed executing DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [UserInJob] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserInJob] PRIMARY KEY ([UserId], [JobId]),
+    CONSTRAINT [AK_UserInJob_Id] UNIQUE ([Id]),
+    CONSTRAINT [FK_UserInJob_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserInJob_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_UserInJob_User_UserId' on table 'UserInJob' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:2459a52e-b105-4dfb-bcbc-63ca5fec5189
+Error Number:1785,State:0,Class:16
+2019-05-31 17:02:54.258 +07:00 [Error] Failed executing DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [UserInJob] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [JobId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserInJob] PRIMARY KEY ([UserId], [JobId]),
+    CONSTRAINT [AK_UserInJob_Id] UNIQUE ([Id]),
+    CONSTRAINT [FK_UserInJob_Job_JobId] FOREIGN KEY ([JobId]) REFERENCES [Job] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserInJob_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);"
+System.Data.SqlClient.SqlException (0x80131904): Introducing FOREIGN KEY constraint 'FK_UserInJob_User_UserId' on table 'UserInJob' may cause cycles or multiple cascade paths. Specify ON DELETE NO ACTION or ON UPDATE NO ACTION, or modify other FOREIGN KEY constraints.
+Could not create constraint or index. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:2459a52e-b105-4dfb-bcbc-63ca5fec5189
+Error Number:1785,State:0,Class:16

@@ -1,0 +1,64 @@
+.wrapper-combo-detail {
+  width: 400px !important;
+  height: 400px !important;
+  background-color: $background;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.scrollable-list {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.wrapper-sub-combo {
+  position: relative;
+  margin: 0 auto;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  width: 10em;
+}
+
+.wrapper-combo-image {
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+}
+
+.close-combo-image {
+  color: $primary;
+  position: absolute;
+  top: -2px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.close-combo-image:before {
+  font-size: 22px;
+}
+
+.fa-plus-square:before {
+  font-size: 15em;
+  color: $primary;
+}
+
+.wrapper-add-combo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.combo-detail-container {
+  padding-top: 15px;
+}
+
+.load-more-combo {
+  color: $primary;
+  position: absolute;
+  top: 5px;
+  right: 16px;
+}
+
+.load-more-combo:before {
+  font-size: $font-size-large;
+}

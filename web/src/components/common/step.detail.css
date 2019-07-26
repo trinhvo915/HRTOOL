@@ -1,0 +1,42 @@
+.step{
+    display: inline-block;
+}
+
+.detail-step:hover{
+    cursor: pointer;
+}
+
+.detail-step:hover .isOpen{
+    opacity: 1;
+}
+
+.option{
+    transform: rotate(90deg);
+    display: inline-block;
+    position: relative;
+}
+
+.isOpen {
+    opacity: 0;
+}
+
+.isOpenSelect{
+    opacity: 0;
+}
+
+.update-delete{
+    transform: rotate(-90deg);
+    position: absolute;
+    background: white;
+    border: 1px solid #EEE;
+    box-shadow: 10px 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10%;
+    display: flex;
+    left: -10px;
+    bottom: 50px;
+}
+
+.step_status_button{
+    float: right;
+    font-size: 10px;
+}

@@ -1,0 +1,24 @@
+.category {
+  margin: 3px 0;
+}
+
+.product {
+  margin: 6px 0;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: calc(0.25rem - 1px);
+  .product-body {
+    padding: 6px;
+    .price {
+      color: #20a8d8
+    }
+  }
+}
+
+.summary {
+  margin: 6px 0px;
+}
+
+.make-bill {
+  margin-right: 6px;
+}

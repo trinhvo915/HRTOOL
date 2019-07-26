@@ -1,0 +1,5 @@
+﻿<p>Hi @Model.ToName,</p>
+<p>The task "@Model.JobName" has been assigned to you by @Model.FromName. Click HERE go to details.</p>
+<br/>
+<p>Best regards,</p>
+<p>Back office development team</p>

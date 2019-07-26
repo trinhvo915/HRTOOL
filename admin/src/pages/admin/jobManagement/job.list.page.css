@@ -1,0 +1,40 @@
+.update-delete{
+    transform: rotate(-90deg);
+    position: absolute;
+    background: white;
+    border: 1px solid #EEE;
+    box-shadow: 10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10%;
+    display: flex;
+    bottom: 30px;
+}
+
+.line{
+    width: 100% !important;
+}
+
+.wrapper-step{
+    border-bottom: 1px solid #EEE;
+}
+
+.enter {
+    color: #20a8d8;
+}
+
+.cancel{
+    color: #f86c6b;
+}
+
+.step-input{
+    border-color: unset !important;
+    border: none;
+}
+
+.step-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.rating-star {
+    font-size: 25px;
+}

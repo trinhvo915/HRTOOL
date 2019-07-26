@@ -1,0 +1,50 @@
+.list-combo {
+  margin-top: 30px;
+}
+
+.options-handler {
+  padding-bottom: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary;
+}
+
+.go-to-shoppping {
+  float: right;
+}
+
+.go-to-shoppping:hover {
+  text-decoration: none;
+}
+
+.combo-list,
+.wrapper-slick {
+  padding: 20px 0;
+}
+
+.topic-image {
+  padding: 10px 0;
+}
+
+.album-images {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.choose-image-album {
+  color: $primary;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.choose-image-album:before {
+  font-size: $font-size-large;
+}
+
+.album-item {
+  width: 100%;
+  height: 100%;
+}

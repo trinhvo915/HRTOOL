@@ -1,0 +1,5 @@
+.pagination .page-item {
+  cursor: pointer; }
+  .pagination .page-item.disabled .page-link {
+    background-color: #c8ced3;
+    color: white; }

@@ -1,0 +1,96 @@
+.btn-sm-primay {
+  color: #707070;
+  padding: 5px 15px;
+  border: solid 1px $primary;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 20%;
+}
+
+.btn-primary {
+  margin-left: 5px;
+  padding: 7px 10px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #20a8d8;
+  border: solid 1px #20a8d8;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  margin-left: 5px;
+  padding: 7px 10px;
+  font-weight: bold;
+  background-color: #fff;
+  color: $danger;
+  border: solid 1px $danger;
+  border-radius: 5px;
+}
+
+.btn-info{
+  margin-left: 5px;
+  padding: 7px 10px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #20a8d8;
+  border: solid 1px #20a8d8;
+  border-radius: 5px;
+}
+
+.btn-primary:hover:not(:disabled),
+.btn-sm-primay:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.upload-btn-wrapper .btn:hover {
+  color: #fff;
+  background-color: #20a8d8;
+  border: solid 1px #20a8d8;
+  border-radius: 5px;
+}
+
+.btn-danger:hover,
+.btn-danger:not(:disabled):not(.disabled):active
+{
+  color: #fff;
+  background-color: $danger;
+  border: solid 1px $danger;
+  border-radius: 5px;
+}
+
+.btn-action {
+  margin-right: 10px;
+}
+// Button upload file
+.upload-btn-wrapper {
+  position: relative;
+  // overflow: hidden;
+  display: inline;
+}
+
+.upload-btn-wrapper input[type='file'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  // display: none;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-active {
+  background-color: $primary;
+  color: $color-white;
+}
+
+.btn-disable {
+  opacity: 0.75;
+  pointer-events: none
+}
+
+.btn-success{
+  font-weight: bold;
+  font-size: 14px
+}

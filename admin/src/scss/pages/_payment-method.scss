@@ -1,0 +1,43 @@
+.bill-info {
+  color: $primary;
+  font-weight: bold;
+}
+
+.bill-header {
+  font-weight: bold;
+}
+
+.payment-type {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+.payment-item {
+  margin: 20px 0;
+  display: flex;
+}
+
+.payment-content-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-group-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-coupon {
+  font-weight: bold;
+  color: #575757;
+  text-align: center;
+}
+
+.coupon {
+  font-weight: normal;
+  color: #ff0000;
+}
+
+.discount-money {
+  color: #9b9b9b;
+}

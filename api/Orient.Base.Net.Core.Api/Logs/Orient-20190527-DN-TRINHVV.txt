@@ -1,0 +1,52 @@
+2019-05-27 10:39:17.464 +07:00 [Error] Failed executing DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Category] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([Id])
+);"
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'Category' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:e7c74c28-1c95-4cb9-9994-064687023571
+Error Number:2714,State:6,Class:16
+2019-05-27 10:39:17.563 +07:00 [Error] Failed executing DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Category] (
+    [Id] uniqueidentifier NOT NULL,
+    [RecordOrder] int NOT NULL,
+    [RecordDeleted] bit NOT NULL,
+    [RecordActive] bit NOT NULL,
+    [CreatedOn] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedOn] datetime2 NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([Id])
+);"
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'Category' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:e7c74c28-1c95-4cb9-9994-064687023571
+Error Number:2714,State:6,Class:16

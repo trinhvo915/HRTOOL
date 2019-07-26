@@ -1,0 +1,36 @@
+.checkout-title {
+  text-align: center;
+}
+
+.label-input {
+  color: #000000;
+  opacity: 0.8;
+}
+
+.checkout-group-button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-checkout {
+  padding: 20px 0;
+}
+
+.re-capcha {
+  justify-content: center;
+}
+
+.province-suggest {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  background-color: $primary;
+  color: white;
+}
+
+.input-group-append .btn.btn-secondary {
+  background-color: transparent;
+  border-color: transparent;
+}

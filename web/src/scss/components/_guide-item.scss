@@ -1,0 +1,37 @@
+/* GUIDE BOOKING SECTION */
+.guide-title {
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+.guide-item {
+  color: $primary;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.guide-container {
+  background-color: $background;
+  min-height: 300px;
+}
+
+.step-detail {
+  padding-bottom: 20px;
+}
+
+.step-description {
+  font-weight: normal;
+}
+
+.guide-layout {
+  padding: 10px 0;
+}
+
+.guide-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guide-top {
+  padding-bottom: 50px;
+}

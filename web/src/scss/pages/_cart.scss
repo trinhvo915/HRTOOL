@@ -1,0 +1,56 @@
+.list-frames {
+  justify-content: center;
+}
+
+.frame-wrap {
+  width: 5em;
+  height: 5em;
+  margin: 0 10px;
+}
+
+.frame-item {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: $background;
+}
+
+.frame-active {
+  background-color: $primary;
+}
+
+.frame-block {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 5px;
+  padding: 30px 0;
+}
+
+.frame-title {
+  padding-top: 5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.cart-group-button {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.remove-cart-image {
+  color: $primary;
+  position: absolute;
+  top: -3px;
+  right: 26px;
+  cursor: pointer;
+}
+
+.remove-cart-image:before {
+  font-size: 22px;
+}

@@ -1,0 +1,25 @@
+.active-sort {
+  color: rgb(252, 4, 4);
+}
+
+.disactive-sort {
+  color: rgb(196, 196, 196);
+}
+
+.sort-column {
+  cursor: pointer;
+}
+.header-table {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.center-parent {
+  text-align: center;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.76563rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}

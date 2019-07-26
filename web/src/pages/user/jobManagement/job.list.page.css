@@ -1,0 +1,65 @@
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #272727;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #c8ced3;
+}
+
+.active-sort {
+    color: #20a8d8
+}
+
+.disactive-sort {
+    color: rgb(196, 196, 196)
+}
+
+.sort-column {
+    background: none;
+    cursor: pointer;
+}
+
+.header-table {
+    background-color: #ffff !important;
+    padding: 10px;
+}
+
+.col-md-5 {
+    padding-right: 5px;
+}
+
+.btn-primary {
+    margin-left: 5px;
+    padding: 7px 10px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #20a8d8;
+    border: solid 1px #20a8d8;
+    border-radius: 5px;
+}
+
+.btn-primary:hover:not(:disabled), .btn-sm-primay:hover, .btn-primary:not(:disabled):not(.disabled):active, .upload-btn-wrapper .btn:hover {
+    color: #fff;
+    background-color: #20a8d8;
+    border: solid 1px #20a8d8;
+    border-radius: 5px;
+}
+
+.add_step{
+    background-color: #88cde6;
+    border-radius: 5px;
+}
+
+.show_plus_button{
+    visibility: visible;
+}
+
+.hidden_plus_button{
+    visibility: hidden;
+}
+
+.rating-star {
+    font-size: 25px;
+}

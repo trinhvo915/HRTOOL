@@ -1,0 +1,64 @@
+/* FOOTER SECTION */
+.footer {
+  display: flex;
+  background-color: $primary;
+  color: $text-color;
+  font-size: 18px;
+  justify-content: space-around;
+  padding: 70px 0;
+  color: $color-white;
+}
+
+.footer-brand {
+  font-size: 28px;
+}
+
+.footer-info {
+  font-size: 15px;
+}
+
+.footer-info div,
+.social-icon {
+  padding: 10px;
+}
+
+.social-tab,
+.info-tab {
+  cursor: pointer;
+}
+
+.market-item {
+  background-color: #fff;
+  border-radius: 5px;
+  color: $primary;
+}
+
+.market-list {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 10px;
+}
+
+.market-item {
+  display: flex;
+  width: 150px;
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+
+.market-item:last-child {
+  margin-top: 5px;
+}
+
+.market-item .market-icon {
+  font-size: 25px;
+  padding-right: 12px;
+  align-self: center;
+}
+
+.platform {
+  font-size: 15px;
+  color: $primary;
+  font-weight: bold;
+}

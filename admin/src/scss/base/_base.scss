@@ -1,0 +1,49 @@
+body {
+  font-family: $font-base;
+  color: $text-color;
+  background-color: $color-white;
+}
+
+@media screen {
+  .printable {
+    display: none;
+  }
+  .non-printable {
+    display: block;
+  }
+}
+@media print {
+  .non-printable {
+    display: none;
+  }
+  .printable {
+    display: block;
+  }
+}
+
+// Links
+
+a {
+  // color: $color-white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    // color: $color-white;
+    text-decoration: none;
+  }
+}
+
+.wrapper-push-header {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.wrap-row {
+  padding: 30px 0;
+}
+
+.wrapper-indicator {
+  pointer-events: none;
+  opacity: 0.5;
+}

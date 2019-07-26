@@ -1,0 +1,21 @@
+.wrapper {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-wrap {
+  width: 100%;
+}
+
+.title {
+  font-size: 26px;
+  color: $primary;
+  padding: 20px 0;
+}
+
+.group-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}

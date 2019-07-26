@@ -1,0 +1,84 @@
+// If you want to override variables do it here
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+// Import styles
+@import '~@coreui/coreui/scss/coreui.scss';
+
+// Temp fix for reactstrap
+@import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
+
+// If you want to add something do it here
+@import 'custom';
+
+// ie fixes
+@import 'ie-fix';
+
+@import './abstracts/variables';
+
+@import './base/base';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/button';
+@import './components/input';
+@import './components/bottom-bar';
+@import './components/guide-item';
+@import './components/slider';
+@import './components/modal';
+@import './components/indicator';
+
+@import './pages/home';
+@import './pages/album';
+@import './pages/cart';
+@import './pages/checkout';
+@import './pages/payment-method';
+@import './pages/checkout-success';
+@import './pages/share-facebook';
+@import './pages/combo-detail';
+
+@import './pages/admin';
+
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+	color: #272727;
+}
+
+header
+{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 25px;	
+}
+
+#info
+{
+	font-size: 18px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}

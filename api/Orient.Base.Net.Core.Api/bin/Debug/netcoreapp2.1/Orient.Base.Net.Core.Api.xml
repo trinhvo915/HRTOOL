@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orient.Base.Net.Core.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Orient.Base.Net.Core.Api.Controllers.BaseController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Orient.Base.Net.Core.Api.Controllers.BaseController.CurrentUserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Controllers.BaseController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Controllers.BaseController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionExecutingContext"></param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Caching.ICacheManager">
+            <summary>
+            Cache manager interface
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Caching.ICacheManager.GetAndSet``1(System.String,System.Int32,System.Func{``0})">
+            <summary>
+            Gets or sets the value associated with the specified key.
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="key">The key of the value to get.</param>
+            <returns>The value associated with the specified key.</returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Caching.ICacheManager.Remove(System.String[])">
+            <summary>
+            Removes the value with the specified key from the cache
+            </summary>
+            <param name="key">/key</param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Caching.MemoryCacheManager">
+            <summary>
+            Represents a MemoryCacheCache
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Caching.MemoryCacheManager.Remove(System.String[])">
+            <summary>
+            Removes the value with the specified key from the cache
+            </summary>
+            <param name="key">/key</param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Exceptions.BusinessRuleException">
+            <summary>
+            Exceptions for Business Rules
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Exceptions.BusinessRuleException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Exceptions.DatabaseException">
+            <summary>
+            Guard against a database exception
+            </summary>
+        </member>
+        <member name="P:Orient.Base.Net.Core.Api.Core.Business.Exceptions.DatabaseException.ExceptionType">
+            <summary>
+            Type of exception thrown by the database
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Exceptions.DatabaseException.#ctor(Orient.Base.Net.Core.Api.Core.Common.Enums.DatabaseExceptionType,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="exceptionType"></param>
+             <param name="message"></param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Filters.CustomAuthorizeAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Orient.Base.Net.Core.Api.Core.Business.Filters.CustomAuthorizeAttribute.Roles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Filters.CustomAuthorizeAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Override OnActionExecuting to check Access Token and Role
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Filters.HandleExceptionFilterAttribute">
+            <summary>
+            Catch exceptions and return appropriate error messages from the Api
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Filters.HandleExceptionFilterAttribute.#ctor(Microsoft.Extensions.Logging.ILogger{Orient.Base.Net.Core.Api.Core.Business.Filters.HandleExceptionFilterAttribute})">
+             <summary>
+            
+             </summary>
+             <param name="logger"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Filters.HandleExceptionFilterAttribute.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Handle different types of exceptions
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.IoC.IoCHelper.SetServiceProvider(Microsoft.Extensions.DependencyInjection.ServiceProvider)">
+            <summary>
+            Set the service provider
+            </summary>
+            <param name="serviceProvider"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.IoC.IoCHelper.GetInstance``1">
+            <summary>
+            Get instance
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.IoC.IoCHelper.GetInstances``1">
+            <summary>
+            Get all instances
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Business.Models.Base.PagedList`1">
+            <summary>
+            Paged list
+            </summary>
+            <typeparam name="TEntity">TEntity</typeparam>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Models.Base.PagedList`1.#ctor(System.Linq.IQueryable{`0},System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="source">source</param>
+            <param name="pageIndex">Page index</param>
+            <param name="pageSize">Page size</param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Models.Base.PagedList`1.#ctor(System.Collections.Generic.IList{`0},System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="source">source</param>
+            <param name="pageIndex">Page index</param>
+            <param name="pageSize">Page size</param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Business.Models.Base.PagedList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="source">source</param>
+            <param name="pageIndex">Page index</param>
+            <param name="pageSize">Page size</param>
+            <param name="totalCount">Total count</param>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.SA">
+            <summary>
+            Super Admin
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.BOD">
+            <summary>
+            BoD
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.HRM">
+            <summary>
+            HR Manager
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.HR">
+            <summary>
+            HR
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.RoleConstants.Dev">
+            <summary>
+            Dev
+            </summary>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Constants.UserConstants">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.UserConstants.SA">
+            <summary>
+            Super Admin
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Constants.UserConstants.SB">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Enums.DatabaseExceptionType">
+            <summary>
+            Types of database errors
+            </summary>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Core.Common.Enums.DatabaseExceptionType.EntityNotFound">
+            <summary>
+            When an entity is not found in the database.
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Extensions.MigrationExtensions.AddIfNotExist``1(Microsoft.EntityFrameworkCore.DbSet{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},``0[])">
+            <summary>
+            Add entity if not exists
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="set"></param>
+            <param name="identifierExpression"></param>
+            <param name="entities"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Extensions.MigrationExtensions.AddIfNotExist``1(Microsoft.EntityFrameworkCore.DbSet{``0},System.Collections.Generic.List{System.Linq.Expressions.Expression{System.Func{``0,System.Object}}},``0[])">
+            <summary>
+            Add entities if not exists
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="set"></param>
+            <param name="identifierExpressions"></param>
+            <param name="entities"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.DataInitializeHelper.GetResourceContent(System.String,Orient.Base.Net.Core.Api.Core.Common.Helpers.DataSetupResourceType)">
+            <summary>
+            Get resource content
+            </summary>
+            <param name="resourceName"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.DataInitializeHelper.GetModuleResourceContent(System.String,System.String,Orient.Base.Net.Core.Api.Core.Common.Helpers.DataSetupResourceType)">
+            <summary>
+            Get module resource content
+            </summary>
+            <param name="resourceName"></param>
+            <param name="moduleResourceNameSpace"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.EmbeddedResourceHelper.GetStream(System.String)">
+            <summary>
+            Get embedded resource by short name.
+            </summary>
+            <param name="name"></param>
+            <returns>The resource as stream if there is only 1 resource whose fullname ends with provided name. Null if no match. Throws Argument Exception if there are more than 1 matches</returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.EmbeddedResourceHelper.GetString(System.String,System.String,System.Reflection.Assembly)">
+            <summary>
+            Get embedded resource by short name.
+            </summary>
+            <param name="name"></param>
+            <param name="namespace"></param>
+            <param name="assembly">The assembly to look for resource, the calling assembly will be use if null is passed</param>
+            <returns>The resource as string if there is only 1 resource whose fullname ends with provided name. Null if no match. Throws Argument Exception if there are more than 1 matches</returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.EmbeddedResourceHelper.GetNullableString(System.String,System.String,System.Reflection.Assembly)">
+            <summary>
+            Get embedded resource by short name.
+            </summary>
+            <param name="name"></param>
+            <param name="namespace"></param>
+            <param name="assembly">The assembly to look for resource, the calling assembly will be use if null is passed</param>
+            <returns>The resource as string if there is only 1 resource whose fullname ends with provided name. Null if no match. Throws Argument Exception if there are more than 1 matches</returns>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Helpers.EnumHelpers">
+            <summary>
+            Enum helper methods
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.EnumHelpers.GetEnumDescription(System.Enum)">
+            <summary>
+            Get Enum description extension
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Helpers.StringHelper">
+            <summary>
+            String Helper
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Helpers.StringHelper.ConvertTextToSlug(System.String)">
+            <summary>
+            Convert string to slug(url friendly) 
+            EX: "String Helper" => "string-helper"
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Orient.Base.Net.Core.Api.Core.Common.Reflections.ReflectionUtilities">
+            <summary>
+            The Reflection Class
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Reflections.ReflectionUtilities.GetAllPropertiesOfType(System.Type)">
+            <summary>
+            Get all properties from type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Reflections.ReflectionUtilities.GetAllPropertyNamesOfType(System.Type)">
+            <summary>
+            Get all property name from type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Reflections.ReflectionUtilities.GetAssemblies">
+            <summary>
+            Get  assemblies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.Base64Encode(System.String)">
+            <summary>
+            Encode raw text
+            </summary>
+            <param name="plainText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.Base64Decode(System.String)">
+            <summary>
+            Decode text
+            </summary>
+            <param name="base64EncodedData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.ComplexEncrypt(System.String,System.String)">
+            <summary>
+            Encrypt url using MD5 and Base64
+            </summary>
+            <param name="toEncrypt"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.ComplexDecrypt(System.String,System.String)">
+            <summary>
+            Decrypt url using MD5 and Base64
+            </summary>
+            <param name="cipherString"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.GetRandomString(System.Int32)">
+            <summary>
+            Generate random string
+            </summary>
+            <param name="lenght"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.EncryptString(System.String,System.String)">
+            <summary>
+            Encrypt string
+            </summary>
+            <param name="toEncrypt"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.DecryptString(System.String,System.String)">
+            <summary>
+            Descrypt string
+            </summary>
+            <param name="cipherString"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.GeneratePassword(System.String,System.String@,System.String@)">
+            <summary>
+            Generate passwword
+            </summary>
+            <param name="password"></param>
+            <param name="passwordSalt"></param>
+            <param name="passwordHash"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.GetPasswordSalt">
+            <summary>
+            Get password salt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.PasswordUtilities.CreateHashPassword(System.String,System.String)">
+            <summary>
+            Create hash password from raw password and salt key
+            </summary>
+            <param name="pass"></param>
+            <param name="saltKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.ResourceUtilities.GetResourceContent(System.String,Orient.Base.Net.Core.Api.Core.Common.Utilities.ResourceUtilities.ResourceType)">
+            <summary>
+            Get resource content
+            </summary>
+            <param name="resourceName"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.Common.Utilities.ResourceUtilities.GetModuleResourceContent(System.String,System.String,Orient.Base.Net.Core.Api.Core.Common.Utilities.ResourceUtilities.ResourceType)">
+            <summary>
+            Get module resource content
+            </summary>
+            <param name="resourceName"></param>
+            <param name="moduleResourceNameSpace"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base.Repository`1.GetDbContext">
+            <summary>
+            Get current db context
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base.Repository`1.ExcuteSqlAsync(System.String)">
+            <summary>
+            Excute sql
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base.Repository`1.InsertAsync(`0)">
+            <summary>
+            Insert entity
+            </summary>
+            <param name="entity"></param>
+            <param name="recordActive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Core.DataAccess.Repositories.Base.Repository`1.InsertAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Insert list of entity
+            </summary>
+            <param name="entities"></param>
+            <param name="recordActive"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Orient.Base.Net.Core.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Orient.Base.Net.Core.Api.Startup.RunMigration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

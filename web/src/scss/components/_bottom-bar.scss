@@ -1,0 +1,57 @@
+.bottom-bar {
+  position: fixed;
+  -webkit-box-shadow: 0 -2px 5px rgba(50, 50, 50, 0.2);
+  box-shadow: 0 -2px 5px rgba(50, 50, 50, 0.2);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.content-center {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-button-container {
+  padding: 15px;
+}
+
+.bottom-button {
+  position: relative;
+  background-color: $primary;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  // width: 100px;
+  border-radius: 10px;
+  font-size: $font-size-medium;
+  font-weight: 800;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s, background-color 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-button-center {
+  width: 100%;
+  padding: 15px;
+  font-size: 0.9em;
+}
