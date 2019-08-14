@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { TabPane, Row, Col, FormGroup, Badge } from "reactstrap";
 import { getJobList } from "../.../../../actions/job.list.action";
@@ -77,13 +77,13 @@ const Detail = ({
                     <Col>
                         <FormGroup>
                             <div> <strong> <i className="fa fa-sticky-note-o" aria-hidden="true"></i> Attachment: </strong>
-                                {detail && detail.attachments && Array.isArray(detail.attachments) && detail.attachments.map((att, key) =>
-                                    <a key={key} href={att.link} target="_blank" rel="noopener noreferrer" download>
-                                        {att.extension === '.jpg' ||
-                                            att.extension === '.jpeg' ||
-                                            att.extension === '.png' ?
-                                            <img className="custom_avatar" src={att.link} alt="Résume" width="80" /> : att.fileName}
-                                    </a>
+                                {detail && detail.attachments && Array.isArray(detail.attachments) && detail.attachments.map((attachment, key) =>
+                                    <Fragment key={key}>
+                                        <br />
+                                        <a href={attachment.link} target="_blank" rel="noopener noreferrer" download>
+                                            <i className="fa fa-download" aria-hidden="true"> {`${attachment.fileName}${attachment.extension}`}  </i>
+                                        </a>
+                                    </Fragment>
                                 )}
                             </div>
                         </FormGroup>
@@ -113,11 +113,11 @@ const Detail = ({
 };
 
 Detail.propTypes = {
-    detail: PropTypes.string
+    detail: PropTypes.object
 };
 
 Detail.defaultProps = {
-    detail: ""
+    detail: {}
 };
 
 export default connect(

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./calendar.list.css";
 import FullCalendarCustom from "../../../components/common/full.calendar";
-import { Row, Col, Button, FormGroup, Label, Badge, Input } from "reactstrap";
+import { Row, Col, Button, FormGroup, Label, Input } from "reactstrap";
 import ModalInfo from "../../../components/modal/modal.info";
 import Form from "react-validation/build/form";
 import { getCalendarByUser } from "../../../actions/calendar.list.action";
@@ -257,7 +257,7 @@ class CalendarByUserList extends Component {
         this.props.hubConnectionCalendar.on('Receive', (nameSender, idUsers, secalendarDescription, type) => {
             this.getCalendarList();
         });
-        this.props.hubConnectionCalendar.on('ReceiveUpdate', (nameSender, idUsers, IdUserDelete,secalendarDescription, type) => {
+        this.props.hubConnectionCalendar.on('ReceiveUpdate', (nameSender, idUsers, IdUserDelete, secalendarDescription, type) => {
             this.getCalendarList();
         });
     }
@@ -474,21 +474,35 @@ class CalendarByUserList extends Component {
                                         <Row>
                                             <Col>
                                                 <FormGroup>
-                                                    <div> <strong> <i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong> {item ? item.description : 'Not Comment'} </div>
+                                                    <div>
+                                                        <strong> <i className="fa fa-star" aria-hidden="true"></i>Status: </strong>
+                                                        {item.interviews ? (item.interviews[0].status === 2 ? "Waiting" : item.interviews[0].status === 3 ? "Passed" : item.interviews[0].status === 4 ? "Failed" : "Pending") : ""}
+                                                    </div>
+                                                </FormGroup>
+
+                                            </Col>
+                                        </Row>
+
+                                        <Row>
+                                            <Col>
+                                                <FormGroup>
+                                                    <div> <strong> <i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong> <p style={{"padding":"5px"}}>{item ? item.description : ''}</p> </div>
                                                 </FormGroup>
                                             </Col>
                                         </Row>
 
-                                        <FormGroup>
-                                            <Label ><strong><i className="fa fa-paperclip" aria-hidden="true"></i> Attachment: </strong></Label>
-                                            {item.interviews[0] && item.interviews[0].attachment &&
-                                                <a href={item.interviews[0].attachment.link} target="_blank" rel="noopener noreferrer" download>
-                                                    {item.interviews[0].attachment.extension === '.jpg' ||
-                                                        item.interviews[0].attachment.extension === '.jpeg' ||
-                                                        item.interviews[0].attachment.extension === '.png' ?
-                                                        <img className="custom_attachment" src={item.interviews[0].attachment.link} alt="Résume" /> : <i className="fa fa-download" aria-hidden="true"> {item.interviews[0].attachment.fileName}  </i>}
-                                                </a>
-                                            }
+                                        <FormGroup >
+                                            <Label ><strong><i className="fa fa-paperclip" aria-hidden="true"></i> Attachments: </strong></Label>
+                                            {item.interviews[0] && item.interviews[0].attachments ? item.interviews[0].attachments.map((attachment, i) => {
+                                                return (
+                                                    <Fragment key={i}>
+                                                        <br />
+                                                        <a href={attachment.link} target="_blank" rel="noopener noreferrer" download>
+                                                            <i className="fa fa-download" aria-hidden="true"> {`${attachment.fileName}${attachment.extension}`}  </i>
+                                                        </a>
+                                                    </Fragment>
+                                                )
+                                            }) : ""}
                                         </FormGroup>
                                     </div>
                                     : !isEdit &&
@@ -538,7 +552,7 @@ class CalendarByUserList extends Component {
                                         <Row>
                                             <Col>
                                                 <FormGroup>
-                                                    <div> <strong><i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong> {item ? item.description : ''} </div>
+                                                    <div> <strong><i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong><p style={{"padding":"5px"}}>{item ? item.description : ''}</p> </div>
                                                 </FormGroup>
                                             </Col>
                                         </Row>
@@ -579,6 +593,7 @@ class CalendarByUserList extends Component {
                                 eventClick={e => this.showDetailModal(e)}
                                 handleClick={e => this.showAddNew(e)}
                                 changeDate={this.changeDateFunc}
+                                currentUserId={currentUserId}
                             />
                         </Col>
                     </Row>

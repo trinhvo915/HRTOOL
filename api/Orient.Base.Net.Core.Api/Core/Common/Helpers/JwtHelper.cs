@@ -70,13 +70,13 @@ namespace Orient.Base.Net.Core.Api.Core.Common.Helpers
 
         public string Name { get; set; }
 
-        public string Mobile { get; set; }
+        //public string Mobile { get; set; }
 
-        public string Address { get; set; }
+        //public string Address { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        //public DateTime DateOfBirth { get; set; }
 
-        public string Email { get; set; }
+        //public string Email { get; set; }
 
         public List<Guid> RoleIds { get; set; }
     }

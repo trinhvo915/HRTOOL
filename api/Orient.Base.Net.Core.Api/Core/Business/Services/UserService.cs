@@ -14,6 +14,7 @@ using Orient.Base.Net.Core.Api.Core.Business.Models;
 using System.Threading.Tasks;
 using Orient.Base.Net.Core.Api.Core.Common.Reflections;
 using Orient.Base.Net.Core.Api.Core.Entities.Enums;
+using Newtonsoft.Json;
 
 namespace Orient.Base.Net.Core.Api.Core.Business.Services
 {
@@ -21,21 +22,21 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 	{
 		Task<IEnumerable<UserViewModel>> GetAllUserAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
 
-		Task<IEnumerable<UserViewModel>> GetAllUserHRAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
+        Task<List<UserTreeJsonModel>> GetHRTree(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
 
-		Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
+        //Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel);
 
-		Task<PagedList<UserViewModel>> ListUserAsync(UserRequestListViewModel userRequestListViewModel);
+        Task<PagedList<UserViewModel>> ListUserAsync(UserRequestListViewModel userRequestListViewModel);
 
-		Task<UserProfileViewModel> GetProfileByIdAsync(Guid? id);
+		Task<UserViewModel> GetUserByIdAsync(Guid? id);
 
 		Task<ResponseModel> RegisterAsync(UserRegisterModel userRegisterModel);
 
 		Task<ResponseModel> UpdateProfileAsync(Guid id, UserUpdateProfileModel userUpdateProfileModel);
 
-        Task<ResponseModel> UpdateUserAsync(Guid id, UserManageModel userColorManageModel);
+		Task<ResponseModel> UpdateUserAsync(Guid id, UserManageModel userColorManageModel);
 
-        Task<ResponseModel> DeleteUserAsync(Guid id);
+		Task<ResponseModel> DeleteUserAsync(Guid id);
 
 		Task<User> GetByEmailAsync(string email);
 
@@ -49,19 +50,23 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 		private readonly IRepository<User> _userRepository;
 		private readonly ILogger _logger;
 		private readonly IOptions<AppSettings> _appSetting;
-        private readonly IRepository<UserInRole> _userInRoleRepository;
+		private readonly IRepository<UserInRole> _userInRoleRepository;
+        private readonly IRepository<Department> _departmentRepository;
 
         #endregion
 
         #region Constructor
 
         public UserService(IRepository<User> userRepository, ILogger<UserService> logger,
-			IOptions<AppSettings> appSetting, IRepository<UserInRole> userInRoleRepository)
+			IOptions<AppSettings> appSetting, IRepository<UserInRole> userInRoleRepository, 
+            IRepository<Department> departmentRepository)
 		{
 			_userRepository = userRepository;
 			_logger = logger;
 			_appSetting = appSetting;
-            _userInRoleRepository = userInRoleRepository;
+			_userInRoleRepository = userInRoleRepository;
+            _departmentRepository = departmentRepository;
+
         }
 
 		#endregion
@@ -77,6 +82,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			return _userRepository.GetAll()
 						.Include(x => x.UserInRoles)
 							.ThenInclude(user => user.Role)
+                        .Include(x =>x.Department)
 					.Where(x => !x.RecordDeleted);
 		}
 
@@ -88,17 +94,34 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			return ReflectionUtilities.GetAllPropertyNamesOfType(type);
 		}
 
-		#endregion
+        private List<UserTreeJsonModel> MapToTreeModelJsonCollection(List<UserTreeModel> source)
+        {
+            // map all items
+            var allItems = source.Select(e => new UserTreeJsonModel(e)).ToList();
 
-		#region Other Methods
+            // build tree structure
+            foreach (var item in allItems)
+            {
+                var children = allItems.Where(e => e.ParentId == item.DepartmentId).ToList();
+                if (children.Any())
+                {
+                    item.Children = children;
+                }
+            }
+            return allItems.Where(e => e.ParentId == null).ToList();
+        }
 
-		public async Task<IEnumerable<UserViewModel>> GetAllUserAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+        #endregion
+
+        #region Other Methods
+
+        public async Task<IEnumerable<UserViewModel>> GetAllUserAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
 		{
 			var list = await GetAll()
 			   .Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
 				   || (x.Name.Contains(baseRequestGetAllViewModel.Query))
 				   || (x.Email.Contains(baseRequestGetAllViewModel.Query))
-			   ))
+			   ) && x.UserInRoles.Any(y=> y.RoleId != RoleConstants.SuperAdminId))
 			   .OrderBy(x => x.Name)
 			   .Select(x => new UserViewModel(x))
 			   .ToListAsync();
@@ -106,14 +129,28 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			return list;
 		}
 
-		public async Task<PagedList<UserViewModel>> ListUserAsync(UserRequestListViewModel userRequestListViewModel)
+        public async Task<List<UserTreeJsonModel>> GetHRTree(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+        {
+            var list = await GetAll()
+               .Where(x => (x.DepartmentId != null)&&(string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
+                   || (x.Name.Contains(baseRequestGetAllViewModel.Query))
+                   || (x.Email.Contains(baseRequestGetAllViewModel.Query))
+               ) && x.UserInRoles.Any(y => y.RoleId != RoleConstants.SuperAdminId))
+               .OrderBy(x => x.Name)
+               .Select(x => new UserTreeModel(x))
+               .ToListAsync();
+
+            return MapToTreeModelJsonCollection(list);
+        }
+
+        public async Task<PagedList<UserViewModel>> ListUserAsync(UserRequestListViewModel userRequestListViewModel)
 		{
 			var list = await GetAll()
 			.Where(x => (!userRequestListViewModel.IsActive.HasValue || x.RecordActive == userRequestListViewModel.IsActive)
 				&& (string.IsNullOrEmpty(userRequestListViewModel.Query)
 					|| (x.Name.Contains(userRequestListViewModel.Query)
 					|| (x.Email.Contains(userRequestListViewModel.Query)
-					))))
+					))) && x.UserInRoles.Any(y => y.RoleId != RoleConstants.SuperAdminId))
 				.Select(x => new UserViewModel(x)).ToListAsync();
 
 			var userViewModelProperties = GetAllPropertyNameOfUserViewModel();
@@ -133,37 +170,22 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			return new PagedList<UserViewModel>(list, userRequestListViewModel.Skip ?? CommonConstants.Config.DEFAULT_SKIP, userRequestListViewModel.Take ?? CommonConstants.Config.DEFAULT_TAKE);
 		}
 
-		public async Task<IEnumerable<UserViewModel>> GetAllUserHRAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
-		{
-			var list = await GetAll()
-			 .Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
-					 || (x.Name.Contains(baseRequestGetAllViewModel.Query)
-					 || (x.Email.Contains(baseRequestGetAllViewModel.Query))
-					 ))
-					 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.HRId || y.RoleId == RoleConstants.HRMId)))
-			  .OrderBy(x => x.Name)
-			  .Select(x => new UserViewModel(x))
-			  .ToListAsync();
+		//public async Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+		//{
+		//	var list = await GetAll()
+		//	 .Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
+		//			 || (x.Name.Contains(baseRequestGetAllViewModel.Query)
+		//			 || (x.Email.Contains(baseRequestGetAllViewModel.Query))
+		//			 ))
+		//			 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.NormalUserId)))
+		//	  .OrderBy(x => x.Name)
+		//	  .Select(x => new UserViewModel(x))
+		//	  .ToListAsync();
 
-			return list;
-		}
+		//	return list;
+		//}
 
-		public async Task<IEnumerable<UserViewModel>> GetAllUserInterviewerAsync(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
-		{
-			var list = await GetAll()
-			 .Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
-					 || (x.Name.Contains(baseRequestGetAllViewModel.Query)
-					 || (x.Email.Contains(baseRequestGetAllViewModel.Query))
-					 ))
-					 && (x.UserInRoles.Any(y => y.RoleId == RoleConstants.DevId)))
-			  .OrderBy(x => x.Name)
-			  .Select(x => new UserViewModel(x))
-			  .ToListAsync();
-
-			return list;
-		}
-
-		public async Task<UserProfileViewModel> GetProfileByIdAsync(Guid? id)
+		public async Task<UserViewModel> GetUserByIdAsync(Guid? id)
 		{
 			var user = await GetAll()
 				.FirstOrDefaultAsync(x => x.Id == id);
@@ -173,7 +195,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			}
 			else
 			{
-				return new UserProfileViewModel(user);
+				return new UserViewModel(user);
 			}
 		}
 
@@ -185,7 +207,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 				return new ResponseModel()
 				{
 					StatusCode = System.Net.HttpStatusCode.BadRequest,
-					Message = "Số điện thoại đã được đăng kí. Sử dụng chức năng quên mật khẩu để lấy lại!"// TODO: multi language
+					Message = "Số điện thoại đã được đăng kí. Sử dụng chức năng quên mật khẩu để lấy lại!"
 				};
 			}
 			else
@@ -193,7 +215,11 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 				user = AutoMapper.Mapper.Map<User>(userRegisterModel);
 				userRegisterModel.Password.GeneratePassword(out string saltKey, out string hashPass);
 
-				user.Password = hashPass;
+                var userInRoles = new List<UserInRole>();
+                userInRoles.Add(new UserInRole { RoleId = RoleConstants.NormalUserId });
+
+                user.UserInRoles = userInRoles;
+                user.Password = hashPass;
 				user.PasswordSalt = saltKey;
 
 				return await _userRepository.InsertAsync(user);
@@ -218,61 +244,61 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 			}
 		}
 
-        public async Task<ResponseModel> UpdateUserAsync(Guid id, UserManageModel userManageModel)
-        {
-            var user = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
-            if (user == null)
-            {
-                return new ResponseModel()
-                {
-                    StatusCode = System.Net.HttpStatusCode.NotFound,
-                    Message = UserMessagesConstants.NOT_FOUND
-                };
-            }
+		public async Task<ResponseModel> UpdateUserAsync(Guid id, UserManageModel userManageModel)
+		{
+			var user = await GetAll().FirstOrDefaultAsync(x => x.Id == id);
+			if (user == null)
+			{
+				return new ResponseModel()
+				{
+					StatusCode = System.Net.HttpStatusCode.NotFound,
+					Message = UserMessagesConstants.NOT_FOUND
+				};
+			}
 
-            //Update Roles for User
-            var Ids = _userInRoleRepository.GetAll().Where(x => x.UserId == user.Id).Select(y => y.Id).ToList();
-            await _userInRoleRepository.DeleteAsync(Ids);
+			//Update Roles for User
+			var Ids = _userInRoleRepository.GetAll().Where(x => x.UserId == user.Id).Select(y => y.Id).ToList();
+			await _userInRoleRepository.DeleteAsync(Ids);
 
-            List<UserInRole> userInRoles = new List<UserInRole>();
-            foreach (var roleId in userManageModel.RoleIds)
-            {
-                userInRoles.Add(
-                    new UserInRole
-                    {
-                        UserId = user.Id,
-                        RoleId = roleId
-                    }
-                );
-            }
-            await _userInRoleRepository.InsertAsync(userInRoles);
+			List<UserInRole> userInRoles = new List<UserInRole>();
+			foreach (var roleId in userManageModel.RoleIds)
+			{
+				userInRoles.Add(
+					new UserInRole
+					{
+						UserId = user.Id,
+						RoleId = roleId
+					}
+				);
+			}
+			await _userInRoleRepository.InsertAsync(userInRoles);
 
-            //Update Color for User
-            if (userManageModel.Color != UserConstants.Color
-               && GetAll().Any(x => x.Color == userManageModel.Color && x.Id != id))
-            {
-                return new ResponseModel()
-                {
-                    StatusCode = System.Net.HttpStatusCode.BadRequest,
-                    Message = UserMessagesConstants.COLOR_EXISTED
-                };
-            }
-            
-            else
-            {
-                userManageModel.SetDataToModel(user);
-                await _userRepository.UpdateAsync(user);
+			//Update Color for User
+			if (userManageModel.Color != UserConstants.Color
+			   && GetAll().Any(x => x.Color == userManageModel.Color && x.Id != id))
+			{
+				return new ResponseModel()
+				{
+					StatusCode = System.Net.HttpStatusCode.BadRequest,
+					Message = UserMessagesConstants.COLOR_EXISTED
+				};
+			}
 
-                return new ResponseModel()
-                {
-                    StatusCode = System.Net.HttpStatusCode.OK,
-                    Data = new UserViewModel(user),
-                    Message = MessageConstants.UPDATED_SUCCESSFULLY
-                };
-            }
-        }
+			else
+			{
+				userManageModel.SetDataToModel(user);
+				await _userRepository.UpdateAsync(user);
 
-        public async Task<ResponseModel> DeleteUserAsync(Guid id)
+				return new ResponseModel()
+				{
+					StatusCode = System.Net.HttpStatusCode.OK,
+					Data = new UserViewModel(user),
+					Message = MessageConstants.UPDATED_SUCCESSFULLY
+				};
+			}
+		}
+
+		public async Task<ResponseModel> DeleteUserAsync(Guid id)
 		{
 			return await _userRepository.DeleteAsync(id);
 		}

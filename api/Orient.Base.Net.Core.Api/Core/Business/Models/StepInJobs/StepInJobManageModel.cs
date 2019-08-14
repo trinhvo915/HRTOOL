@@ -13,5 +13,12 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.StepInJobs
         [StringLength(512)]
         [Required]
         public string Name { get; set; }
+
+        public StepInJobManageModel() { }
+
+        public StepInJobManageModel(StepInJob stepInJob)
+        {
+            Name = stepInJob.Name;
+        }
     }
 }

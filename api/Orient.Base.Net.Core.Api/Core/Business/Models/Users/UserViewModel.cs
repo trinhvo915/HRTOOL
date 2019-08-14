@@ -1,4 +1,5 @@
-﻿using Orient.Base.Net.Core.Api.Core.Business.Models.Roles;
+﻿using Orient.Base.Net.Core.Api.Core.Business.Models.Departments;
+using Orient.Base.Net.Core.Api.Core.Business.Models.Roles;
 using Orient.Base.Net.Core.Api.Core.Entities;
 using Orient.Base.Net.Core.Api.Core.Entities.Enums;
 using System;
@@ -27,6 +28,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Users
 				Gender = user.Gender;
 				Roles = user.UserInRoles != null ? user.UserInRoles.Select(y => new RoleViewModel(y.Role)).ToArray() : null;
                 Color = user.Color;
+                Department = user.Department != null ? new DepartmentViewModel(user.Department) : null;
             }
 		}
 
@@ -52,5 +54,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Users
 
         public string Color { get; set; }
 
+        public DepartmentViewModel Department { get; set; }
     }
 }

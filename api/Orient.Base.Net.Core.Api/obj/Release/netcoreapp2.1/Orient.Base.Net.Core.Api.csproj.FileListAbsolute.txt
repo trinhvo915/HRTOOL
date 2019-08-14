@@ -21,3 +21,9 @@ C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\obj\Re
 C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\obj\Release\netcoreapp2.1\Orient.Base.Net.Core.Api.RazorTargetAssemblyInfo.cs
 C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\obj\Release\netcoreapp2.1\Orient.Base.Net.Core.Api.Views.pdb
 C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\obj\Release\netcoreapp2.1\Orient.Base.Net.Core.Api.csproj.CopyComplete
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\32 bit\libwkhtmltox.dll
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\32 bit\libwkhtmltox.dylib
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\32 bit\libwkhtmltox.so
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\64 bit\libwkhtmltox.dll
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\64 bit\libwkhtmltox.dylib
+C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\bin\Release\netcoreapp2.1\Core\Common\PDFNativeLib\wkhtmltox\v0.12.4\64 bit\libwkhtmltox.so

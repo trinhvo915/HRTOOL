@@ -161,6 +161,13 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
                 model.FromName = userFrom.Name;
                 model.JobName = "Calendar";
                 EmailTemplateResponseModel emailTemplateResponseModel = await EmailTemplateHelper.ParseModelAsync<ModelEmailCalendar>(jobEmailTemplate, model);
+
+                if (listToUser.IndexOf(user) != 0)
+                {
+                    emailTemplateResponseModel.CC = string.Empty;
+                    emailTemplateResponseModel.BCC = string.Empty;
+                }
+
                 EmailQueue emailQueue = new EmailQueue(emailTemplateResponseModel);
                 emailQueue.To = user.Email;
                 emailQueue.ToName = user.Name;

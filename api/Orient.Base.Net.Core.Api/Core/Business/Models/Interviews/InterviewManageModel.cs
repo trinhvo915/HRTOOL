@@ -51,7 +51,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Interviews
             {
                 var interviewerIds = _userRepository.GetAll()
                     .Include(x => x.UserInRoles)
-                    .Where(x => x.UserInRoles.Any(y => y.RoleId == RoleConstants.DevId || y.RoleId == RoleConstants.BODId))
                     .Select(x => x.Id);
                 if (!InterviewerIds.All(x => interviewerIds.Contains(x)))
                 {

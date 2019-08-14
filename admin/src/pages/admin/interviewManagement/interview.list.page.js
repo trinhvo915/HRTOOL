@@ -216,7 +216,7 @@ class InterviewListPage extends Component {
         try {
             const query = {
                 level: this.state.CandidateList
-                    .filter(x => x.id == this.state.item.candidateId)
+                    .filter(x => x.id === this.state.item.candidateId)
                     .map(candidate => candidate.level)
                     .shift() ||
                     this.state.item.candidate.level,
@@ -322,7 +322,7 @@ class InterviewListPage extends Component {
 
         if (types && types.length > 0) {
             const typesId = types.map(item => item.id);
-            attachments = attachments.filter(x => x.extension != ".pdf");
+            attachments = attachments.filter(x => x.extension !== ".pdf");
             types = await this.generateQuestion(typesId);
         }
 
@@ -392,7 +392,7 @@ class InterviewListPage extends Component {
         let params = Object.assign({}, this.state.params, {
             query: this.state.query
         });
-        RequestHelper.get(appConfig.apiUrl + "users/interviewers", params).then(result => {
+        RequestHelper.get(appConfig.apiUrl + "users/all-users", params).then(result => {
             this.setState({
                 interviewerList: result,
             })
@@ -691,10 +691,7 @@ class InterviewListPage extends Component {
                                                     <div key={++idx} style={{ "textAlign": "left" }} >
                                                         {idx}.&nbsp;
                                                             <a href={attachment.link} target="_blank" rel="noopener noreferrer" download>
-                                                            {attachment.extension === '.jpg' ||
-                                                                attachment.extension === '.jpeg' ||
-                                                                attachment.extension === '.png' ?
-                                                                <img src={attachment.link} alt="Resume" width="80" /> : attachment.fileName}
+                                                            {`${attachment.fileName}${attachment.extension}`} 
                                                         </a><br />
                                                     </div>)}
                                         </td>

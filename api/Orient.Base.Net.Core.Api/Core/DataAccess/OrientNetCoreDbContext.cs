@@ -60,6 +60,8 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
 
 		public DbSet<TechnicalSkillInCandidate> TechnicalSkillInCandidates { get; set; }
 
+        public DbSet<Department> Departments { get; set; }
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
             // Comment
@@ -148,6 +150,6 @@ namespace Orient.Base.Net.Core.Api.Core.DataAccess
                 .HasOne(pt => pt.Interview)
                 .WithMany(p => p.AttachmentInInterviews)
                 .HasForeignKey(pt => pt.InterviewId);
-		}
+        }
 	}
 }

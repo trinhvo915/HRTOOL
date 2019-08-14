@@ -10,40 +10,40 @@ using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.Business.Services
 {
-    public interface ICalendarTypeService
-    {
-        Task<List<CalendarTypeViewModel>> ListCalendarTypeAsync();
-    }
+	public interface ICalendarTypeService
+	{
+		Task<List<CalendarTypeViewModel>> ListCalendarTypeAsync();
+	}
 
-    public class CalendarTypeService : ICalendarTypeService
-    {
-        #region Fields
+	public class CalendarTypeService : ICalendarTypeService
+	{
+		#region Fields
 
-        private readonly IRepository<CalendarType> _calendarTypeRepository;
+		private readonly IRepository<CalendarType> _calendarTypeRepository;
 
-        #endregion
+		#endregion
 
-        #region Constructor
+		#region Constructor
 
-        public CalendarTypeService(IRepository<CalendarType> calendarTypeRepository)
-        {
-            _calendarTypeRepository = calendarTypeRepository;
-        }
+		public CalendarTypeService(IRepository<CalendarType> calendarTypeRepository)
+		{
+			_calendarTypeRepository = calendarTypeRepository;
+		}
 
-        #endregion
+		#endregion
 
-        #region Private Methods
+		#region Private Methods
 
-        private IQueryable<CalendarType> GetAll()
-        {
-            return _calendarTypeRepository.GetAll();
-        }
+		private IQueryable<CalendarType> GetAll()
+		{
+			return _calendarTypeRepository.GetAll();
+		}
 
-        #endregion
+		#endregion
 
-        public async Task<List<CalendarTypeViewModel>> ListCalendarTypeAsync()
-        {
-           return await GetAll().Where(x => x.Name != CommonConstants.Config.Interview).Select(x => new CalendarTypeViewModel(x)).ToListAsync();
-        }
-    }
+		public async Task<List<CalendarTypeViewModel>> ListCalendarTypeAsync()
+		{
+			return await GetAll().Where(x => x.Name != CalendarTypeConstants.Interview).Select(x => new CalendarTypeViewModel(x)).ToListAsync();
+		}
+	}
 }

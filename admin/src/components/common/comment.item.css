@@ -164,6 +164,7 @@ background-color: #F5F5F5;
 }
 
 .show-comment{
+    white-space: pre-wrap;
     overflow-wrap: break-word;
     max-width: 80%;
 }

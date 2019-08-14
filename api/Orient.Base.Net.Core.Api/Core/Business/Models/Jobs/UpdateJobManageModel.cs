@@ -28,13 +28,13 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
 
         public string Description { get; set; }
 
-        public Guid ReporterId { get; set; }
-
         public Guid[] UserIds { get; set; }
 
         public Guid[] CategoryIds { get; set; }
 
         public AttachmentManageModel[] Attachments { get; set; }
+
+        public bool IsDisable { get; set; }
 
         public void SetDataToModel(Job job)
         {
@@ -44,19 +44,13 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
             job.DateStart = DateStart;
             job.DateEnd = DateEnd;
             job.Description = Description;
-            job.ReporterId = ReporterId;
+            job.IsDisable = IsDisable;
         }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             var userRepository = IoCHelper.GetInstance<IRepository<User>>();
             var categoryRepository = IoCHelper.GetInstance<IRepository<Category>>();
-
-            var user = userRepository.GetAll().FirstOrDefault(x => x.Id == ReporterId);
-            if (user == null)
-            {
-                yield return new ValidationResult(UserMessagesConstants.NOT_FOUND, new string[] { "ReporterId" });
-            }
 
             var priority = Enum.IsDefined(typeof(PriorityEnums.Priority), Priority);
             var status = Enum.IsDefined(typeof(StatusEnums.Status), Status);

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Row, Col, Button, FormGroup, Label, Badge, Input } from "reactstrap";
+import { Row, Col, Button, FormGroup, Label, Input } from "reactstrap";
 import Datetime from "react-datetime";
 import ModalInfo from "../../../components/modal/modal.info";
 import Form from "react-validation/build/form";
@@ -31,7 +31,7 @@ class CalendarListPage extends Component {
             hubConnection: null,
             isEdit: false,
             currentUserId: null,
-            hRList: [],
+            userList: [],
             usesIdBefores: [],
             params: {
                 dateStart: null,
@@ -179,7 +179,7 @@ class CalendarListPage extends Component {
                     })
             }
         } catch (err) {
-            throw(err);
+            throw (err);
         }
     };
 
@@ -248,13 +248,13 @@ class CalendarListPage extends Component {
         }
     };
 
-    getHRList = () => {
+    getUserList = () => {
         let params = Object.assign({}, {
             query: this.state.query
         });
-        RequestHelper.get(appConfig.apiUrl + "users/hrs", params).then(result => {
+        RequestHelper.get(appConfig.apiUrl + "users/all-users", params).then(result => {
             this.setState({
-                hRList: result,
+                userList: result,
             })
         });
     };
@@ -298,7 +298,7 @@ class CalendarListPage extends Component {
         // });
         this.props.getCalendarTypeList(null);
         this.getCalendarList();
-        this.getHRList();
+        this.getUserList();
     };
 
     render() {
@@ -353,11 +353,11 @@ class CalendarListPage extends Component {
                                             <Col xs="6" sm="6" md="6" lg="6">
                                                 <FormGroup>
                                                     <MultipleSelect
-                                                        title="Human Resource"
+                                                        title="Assigned User"
                                                         type="select"
                                                         name="Name"
                                                         placeholder="Multiple Choose"
-                                                        options={this.state.hRList || []}
+                                                        options={this.state.userList || []}
                                                         labelField="name"
                                                         valueField="id"
                                                         value={item.users}
@@ -473,9 +473,9 @@ class CalendarListPage extends Component {
                                                     <div><strong><i className="fa fa-users" aria-hidden="true"></i>Interviewers: </strong>
                                                         {item.users ? item.users.map((user, i) => {
                                                             return (
-                                                                // <Badge outline="true" color={rand < 1 ? "primary" : rand <= 2 ? "success" : rand <= 3 ? "warning" : rand <= 4 ? "info" : "danger"} pill key={i}>
+                                                                //  <Badge outline="true" style={{"color":user.color, "backgroundColor":"white", "fontSize":"15px"}} pill key={i}>
                                                                 user.name
-                                                                // </Badge>
+                                                                //  </Badge>
                                                             )
                                                         }).join(", ") : ''} </div>
                                                 </FormGroup>
@@ -513,21 +513,35 @@ class CalendarListPage extends Component {
                                         <Row>
                                             <Col>
                                                 <FormGroup>
-                                                    <div> <strong> <i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong> {item ? item.description : 'Not Comment'} </div>
+                                                    <div>
+                                                        <strong> <i className="fa fa-star" aria-hidden="true"></i>Status: </strong>
+                                                        {item.interviews ? (item.interviews[0].status === 2 ? "Waiting" : item.interviews[0].status === 3 ? "Passed" : item.interviews[0].status === 4 ? "Failed" : "Pending") : ""}
+                                                    </div>
+                                                </FormGroup>
+
+                                            </Col>
+                                        </Row>
+
+                                        <Row>
+                                            <Col>
+                                                <FormGroup>
+                                                    <div> <strong> <i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong><p style={{"padding":"5px"}}>{item ? item.description : 'Not Comment'} </p> </div>
                                                 </FormGroup>
                                             </Col>
                                         </Row>
 
                                         <FormGroup>
-                                            <Label ><strong><i className="fa fa-paperclip" aria-hidden="true"></i> Attachment: </strong></Label>
-                                            {item.interviews[0] && item.interviews[0].attachment &&
-                                                <a href={item.interviews[0].attachment.link} target="_blank" rel="noopener noreferrer" download>
-                                                    {item.interviews[0].attachment.extension === '.jpg' ||
-                                                        item.interviews[0].attachment.extension === '.jpeg' ||
-                                                        item.interviews[0].attachment.extension === '.png' ?
-                                                        <img className="custom_attachment" src={item.interviews[0].attachment.link} alt="R�sume" /> : <i className="fa fa-download" aria-hidden="true"> {item.interviews[0].attachment.fileName}  </i>}
-                                                </a>
-                                            }
+                                            <Label ><strong><i className="fa fa-paperclip" aria-hidden="true"></i> Attachments: </strong></Label>
+                                            {item.interviews[0] && item.interviews[0].attachments ? item.interviews[0].attachments.map((attachment, i) => {
+                                                return (
+                                                    <Fragment key={i}>
+                                                        <br />
+                                                        <a href={attachment.link} target="_blank" rel="noopener noreferrer" download>
+                                                            <i className="fa fa-download" aria-hidden="true"> {`${attachment.fileName}${attachment.extension}`}  </i>
+                                                        </a>
+                                                    </Fragment>
+                                                )
+                                            }) : ""}
                                         </FormGroup>
                                     </div>
                                     : !isEdit &&
@@ -546,7 +560,7 @@ class CalendarListPage extends Component {
                                             <Col>
                                                 <FormGroup>
                                                     <div>
-                                                        <strong><i className="fa fa-users" aria-hidden="true"></i>Human Resource:</strong> {item.users ? item.users.map((user, i) => {
+                                                        <strong><i className="fa fa-users" aria-hidden="true"></i>Assigned User:</strong> {item.users ? item.users.map((user, i) => {
                                                             return (
                                                                 //   <Badge outline="true" color={rand < 1 ? "primary" : rand <= 2 ? "success" : rand <= 3 ? "warning" : rand <= 4 ? "info" : "danger"} pill key={i}>
                                                                 user.name
@@ -577,7 +591,7 @@ class CalendarListPage extends Component {
                                         <Row>
                                             <Col>
                                                 <FormGroup>
-                                                    <div> <strong><i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong> {item ? item.description : ''} </div>
+                                                    <div> <strong><i className="fa fa-sticky-note-o" aria-hidden="true"></i> Description: </strong><p style={{"padding":"5px"}}>{item ? item.description : ''}</p> </div>
                                                 </FormGroup>
                                             </Col>
                                         </Row>

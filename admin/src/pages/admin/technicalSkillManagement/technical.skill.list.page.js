@@ -140,10 +140,17 @@ class TechnicalSkillListPage extends Component {
     };
 
     deleteTechnicalSkill = async () => {
+        const { itemId, isDesc, sortName } = this.state;
+
         try {
-            await Api.deleteTechnicalSkill(this.state.itemId);
+            await Api.deleteTechnicalSkill(itemId);
+            if (this.props.technicalSkillList.technicalSkillList.sources.length === 1) {
+                this.setState({
+                    params: { ...this.state.params, skip: this.props.technicalSkillList.technicalSkillList.pageIndex - 1 }
+                })
+            }
+            this.getTechnicalSkillList(isDesc, sortName);
             this.toggleDeleteModal();
-            this.getTechnicalSkillList();
             toastSuccess("The technical skill has been deleted successfully");
         } catch (err) {
             toastError(err);

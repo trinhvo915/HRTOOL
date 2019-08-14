@@ -18,6 +18,18 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Attachments
         [Required]
         public string Link { get; set; }
 
+        public AttachmentManageModel()
+        {
+
+        }
+
+        public AttachmentManageModel(Attachment attachment)
+        {
+            FileName = attachment.FileName;
+            Extension = attachment.Extension;
+            Link = attachment.Link;
+        }
+
         public void SetDataToModel(Attachment attachment)
         {
             attachment.FileName = FileName;

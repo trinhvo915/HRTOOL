@@ -25,8 +25,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
 
         public string Description { get; set; }
 
-        public Guid ReporterId { get; set; }
-
         public Guid[] UserIds { get; set; }
 
         public Guid[] CategoryIds { get; set; }
@@ -35,16 +33,31 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
 
         public StepInJobManageModel[] Steps { get; set; }
 
+        public int DateRepeat { get; set; }
+
+        public Guid? IdLink { get; set; }
+
+        public JobManageModel() { }
+
+        public JobManageModel(Job job)
+        {
+            Name = job.Name;
+            Priority = job.Priority;
+            DateStart = job.DateStart.Value.AddDays(job.DateRepeat);
+            DateEnd = job.DateEnd != null ? job.DateEnd.Value.AddDays(job.DateRepeat) : (DateTime?)null;
+            Description = job.Description;
+            UserIds = job.UserInJobs.Select(x => x.UserId).ToArray();
+            CategoryIds = job.JobInCategories.Select(x => x.CategoryId).ToArray();
+            Attachments = job.AttachmentInJobs.Select(x => new AttachmentManageModel(x.Attachment)).ToArray();
+            Steps = job.StepInJobs.OrderBy(x => x.RecordOrder).Select(x => new StepInJobManageModel(x)).ToArray();
+            DateRepeat = job.DateRepeat;
+            IdLink = job.Id;
+        }
+
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             var userRepository = IoCHelper.GetInstance<IRepository<User>>();
             var categoryRepository = IoCHelper.GetInstance<IRepository<Category>>();
-
-            var user = userRepository.GetAll().FirstOrDefault(x => x.Id == ReporterId);
-            if (user == null)
-            {
-                yield return new ValidationResult(UserMessagesConstants.NOT_FOUND, new string[] { "ReporterId" });
-            }
 
             var priority = Enum.IsDefined(typeof(PriorityEnums.Priority), Priority);
             if (!priority)
@@ -72,9 +85,14 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
                 yield return new ValidationResult("User not be null", new string[] { "UserIds" });
             }
 
-            if(!UserIds.All(x => userRepository.GetAll().Select(y => y.Id).Contains(x)))
+            if (!UserIds.All(x => userRepository.GetAll().Select(y => y.Id).Contains(x)))
             {
-                yield return new ValidationResult("Invalid user", new string[] { "UserIds" });
+                yield return new ValidationResult(UserMessagesConstants.NOT_FOUND, new string[] { "UserIds" });
+            }
+
+            if (DateRepeat <= 0)
+            {
+                yield return new ValidationResult("DateRepeat is less than or equal to Zero", new string[] { "DateRepeat" });
             }
         }
     }

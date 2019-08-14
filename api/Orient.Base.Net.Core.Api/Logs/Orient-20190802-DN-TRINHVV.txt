@@ -1,0 +1,855 @@
+2019-08-02 08:36:03.252 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:36:03.341 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:36:03.342 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:36:31.949 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:36:31.951 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:36:31.951 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:08.739 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:08.778 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:08.779 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:38.393 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:38.394 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:38.394 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:43.536 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:43.537 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:37:43.538 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:16.735 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:16.736 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:16.736 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:40.412 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:40.413 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:39:40.414 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:43:41.494 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:43:41.534 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:43:41.534 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:45:35.811 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:45:35.850 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:45:35.851 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:50:08.847 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:50:08.934 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:50:08.935 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:57:23.901 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:57:23.937 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 08:57:23.937 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:02:12.942 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:02:12.977 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:02:12.977 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:03:03.191 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:03:03.192 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:03:03.193 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:41.829 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:41.874 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:41.875 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:51.451 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:51.452 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:04:51.452 +07:00 [Error] General Error
+System.InvalidOperationException: Unable to resolve service for type 'Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService' while attempting to activate 'Orient.Base.Net.Core.Api.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:38:09.089 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:38:09.131 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:38:09.134 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:38:09.161 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:38:09.164 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:38:09.167 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:38:09.549 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:38:09.554 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:38:09.560 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:40:33.630 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:40:33.680 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:40:33.683 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-08-02 09:40:33.709 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:40:33.712 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:40:33.715 +07:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Orient.Base.Net.Core.Api.Core.DataAccess.OrientNetCoreDbContext"'."
+""System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)"
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-08-02 09:40:34.049 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:40:34.052 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:40:34.057 +07:00 [Error] General Error
+System.InvalidOperationException: Source sequence doesn't contain any elements.
+   at System.Linq.AsyncEnumerable.First_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Orient.Base.Net.Core.Api.Core.Business.Services.DepartmentService.CreateDepartmentAsync(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Core\Business\Services\DepartmentService.cs:line 38
+   at Orient.Base.Net.Core.Api.Controllers.DepartmentController.Post(DepartmentManageModel departmentManageModel) in C:\Users\trinh.vo\Documents\InternDN_HRTools\api\Orient.Base.Net.Core.Api\Controllers\DepartmentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-02 09:49:55.562 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.605 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.606 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.608 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.608 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.608 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.656 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.657 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.657 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.658 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.658 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.658 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.676 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.770 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.771 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.771 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.772 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.787 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.787 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.787 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.788 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.797 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.797 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.797 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.799 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.799 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.800 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.800 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.800 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.800 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.807 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.808 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.808 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.809 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.809 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.809 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.809 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.810 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.810 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 09:49:55.915 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.915 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 09:49:55.915 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:37.748 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.806 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.806 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.812 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.812 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.812 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.887 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.887 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.887 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.891 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.891 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.891 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.975 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.975 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.975 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.981 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.982 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:37.982 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.222 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.223 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.223 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.229 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.229 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.230 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.241 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.241 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.242 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.317 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.317 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.317 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.322 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.322 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.322 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.327 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.327 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.327 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.395 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.396 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.396 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.408 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.408 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.408 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.418 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.418 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.418 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.500 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.500 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.500 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.505 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.505 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.505 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.511 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.511 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.511 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 13:33:38.908 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.909 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 13:33:38.909 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.661 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.719 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.720 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.723 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.723 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.723 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.773 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.773 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.774 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Doing)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.774 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.774 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.774 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.781 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.782 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.782 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Done)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.782 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.832 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.832 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.832 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.834 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.834 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.834 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Pending)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.834 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.835 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.835 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.847 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.847 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.847 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.848 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.848 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.848 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Waiting)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.849 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.849 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.849 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.858 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.858 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.858 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.859 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.859 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.859 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Passed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.860 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.860 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.860 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.870 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.870 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.870 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.871 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.871 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.871 +07:00 [Warning] The LINQ expression '"where [i].Status.Equals(Failed)"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.872 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.872 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.873 +07:00 [Warning] The LINQ expression '"Count()"' could not be translated and will be evaluated locally.
+2019-08-02 14:01:47.969 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.969 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:01:47.969 +07:00 [Warning] The Include operation for navigation '"[i].Calendar"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:14:38.833 +07:00 [Warning] The Include operation for navigation '"[i].UserInRoles.Role"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:14:38.833 +07:00 [Warning] The Include operation for navigation '"[i].UserInRoles.Role"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-08-02 14:14:38.833 +07:00 [Warning] The Include operation for navigation '"[i].UserInRoles.Role"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.

@@ -109,7 +109,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Services
 				.Where(x => (string.IsNullOrEmpty(baseRequestGetAllViewModel.Query)
 					|| (x.Name.Contains(baseRequestGetAllViewModel.Query))
 					|| (x.Email.Contains(baseRequestGetAllViewModel.Query)))
-				&& (x.Interviews.Count == 0 || x.Interviews.Any(y => y.Status == InterviewEnums.Status.Failed)))
+				&& (x.Interviews.Count == 0 || x.Interviews.All(y => y.Status == InterviewEnums.Status.Failed)))
 				.OrderBy(x => x.Name)
 				.Select(x => new CandidateViewModel(x))
 				.ToListAsync();

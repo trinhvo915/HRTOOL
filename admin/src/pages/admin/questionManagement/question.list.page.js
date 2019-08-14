@@ -11,11 +11,8 @@ import Api from "../../../api/api";
 import { toastSuccess, toastError } from "../../../helpers/toast.helper";
 import { getQuestionList } from "../../../actions/question.list.action";
 import lodash from "lodash";
-import { Alert, Row, Col, Button, Table, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-
+import { Alert, Row, Col, Button, Table, FormGroup, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { pagination } from "../../../constant/app.constant";
-import moment from "moment"
-import { toast } from "react-toastify";
 
 class QuestionListPage extends Component {
     constructor(props) {
@@ -192,11 +189,11 @@ class QuestionListPage extends Component {
         const question = { status, id };
         const approved = 3;
 
-        if (status == approved && answers.length > 1) {
+        if (status === approved && answers.length > 1) {
             let containApproveAnswer = false;
 
             answers.forEach(answer => {
-                if (answer.status == approved) {
+                if (answer.status === approved) {
                     containApproveAnswer = true;
                 }
             })

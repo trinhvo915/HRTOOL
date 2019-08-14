@@ -32,7 +32,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Interviews
                 Interviewers = interview.Calendar != null ?
                     (interview.Calendar.UserInCalendars != null ?
                     (interview.Calendar.UserInCalendars
-                        .Where(x => x.User.UserInRoles.Any(y => y.RoleId == RoleConstants.DevId || y.RoleId == RoleConstants.BODId))
                         .Select(x => new UserViewModel(x.User))
                         .OrderBy(x => x.Name)
                         .ToArray())

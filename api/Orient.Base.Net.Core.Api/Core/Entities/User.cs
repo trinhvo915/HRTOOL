@@ -88,6 +88,11 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
 
         public string Color { get; set; }
 
+        public string TaskDescription { get; set; }
+
+        public Guid? DepartmentId { get; set; }
+
+        public Department Department { get; set; }
         #endregion
 
         public List<Comment> Comments { get; set; }

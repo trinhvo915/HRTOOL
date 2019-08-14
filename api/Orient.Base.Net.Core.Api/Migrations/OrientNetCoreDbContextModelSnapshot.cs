@@ -376,6 +376,39 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.ToTable("Comment");
                 });
 
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.Department", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("CreatedBy");
+
+                    b.Property<DateTime?>("CreatedOn");
+
+                    b.Property<Guid?>("DeletedBy");
+
+                    b.Property<DateTime?>("DeletedOn");
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<Guid?>("ParentId");
+
+                    b.Property<bool>("RecordActive");
+
+                    b.Property<bool>("RecordDeleted");
+
+                    b.Property<int>("RecordOrder");
+
+                    b.Property<Guid?>("UpdatedBy");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Department");
+                });
+
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.EmailAccount", b =>
                 {
                     b.Property<Guid>("Id")
@@ -594,6 +627,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("DateEnd");
 
+                    b.Property<int>("DateRepeat");
+
                     b.Property<DateTime?>("DateStart");
 
                     b.Property<Guid?>("DeletedBy");
@@ -601,6 +636,12 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.Property<DateTime?>("DeletedOn");
 
                     b.Property<string>("Description");
+
+                    b.Property<Guid?>("IdLink");
+
+                    b.Property<bool>("IsDisable");
+
+                    b.Property<bool>("IsProcess");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -902,6 +943,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("DeletedOn");
 
+                    b.Property<Guid?>("DepartmentId");
+
                     b.Property<string>("Email")
                         .HasMaxLength(255);
 
@@ -941,6 +984,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
 
                     b.Property<DateTime?>("ResetPasswordExpiryDate");
 
+                    b.Property<string>("TaskDescription");
+
                     b.Property<string>("Twitter")
                         .HasMaxLength(512);
 
@@ -949,6 +994,8 @@ namespace Orient.Base.Net.Core.Api.Migrations
                     b.Property<DateTime?>("UpdatedOn");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("User");
                 });
@@ -1185,6 +1232,13 @@ namespace Orient.Base.Net.Core.Api.Migrations
                         .WithMany("TemplateAttachments")
                         .HasForeignKey("EmailTemplateId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.User", b =>
+                {
+                    b.HasOne("Orient.Base.Net.Core.Api.Core.Entities.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId");
                 });
 
             modelBuilder.Entity("Orient.Base.Net.Core.Api.Core.Entities.UserInCalendar", b =>

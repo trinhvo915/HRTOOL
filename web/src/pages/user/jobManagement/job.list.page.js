@@ -223,8 +223,7 @@ class UserInJobListPage extends Component {
 
     async addJob() {
         let { name, dateStart, categoryIds, userIds, steps } = this.state.item;
-        console.log("steps", this.state.item.steps)
-        if (!dateStart || !name || !categoryIds || !userIds || steps? steps.some(x => x.name === ''): null) {
+        if (!dateStart || !name || !categoryIds || !userIds || steps ? steps.some(x => x.name === '') : null) {
             toastError("Please input all field");
             return;
         }
@@ -425,7 +424,7 @@ class UserInJobListPage extends Component {
         this.toggleModalAddNew(job, title);
     };
 
-    async updateItem(content) {
+    updateItem = async (content) => {
         const { jobId } = this.state.commentItem;
         let params = {
             jobId,
@@ -436,7 +435,7 @@ class UserInJobListPage extends Component {
 
         // real-time-notification
         let { item } = this.state;
-        let userIds = item.users.map(item => item.id);
+        let userIds = [...item.users.map(item => item.id), item.reporter.id];
         let nameSender = CookieHelper.getUser().JwtPayload.Name;
         this.props.hubConnectionCalendar.invoke("sendMessage", nameSender, userIds, null, appConfig.comment_add)
             .catch((err) => {
@@ -510,16 +509,25 @@ class UserInJobListPage extends Component {
         }));
     }
 
-    updateItem = (content) => {
-        let { item } = this.state;
-        let data = {
-            id: item.id,
-            comment: { content }
-        }
-        JobApi.addCommentJob(data).then(() => {
-            this.getJobById(item.id);
-        })
-    }
+    // updateItem = (content) => {
+    //     let { item } = this.state;
+    //     let data = {
+    //         id: item.id,
+    //         comment: { content }
+    //     }
+    //     JobApi.addCommentJob(data).then(() => {
+    //         this.getJobById(item.id);
+    //     })
+
+    //     // real-time-notification
+    //     let userIds = item.users.map(item => item.id);
+    //     let nameSender = CookieHelper.getUser().JwtPayload.Name;
+    //     this.props.hubConnectionCalendar.invoke("sendMessage", nameSender, userIds, null, appConfig.comment_add)
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    //     //end-real-time-notification
+    // }
 
     fileOnChange = (event) => {
         let item = Object.assign({}, this.state.item);
@@ -1127,7 +1135,7 @@ class UserInJobListPage extends Component {
                                                 emptyStarColor="#EEEFFF" />
                                             </td>
                                             <td>{moment(item.dateStart).format("LLLL")}</td>
-                                            <td>{moment(item.dateEnd).format("LLLL")}</td>
+                                            <td>{item.dateEnd != null ? moment(item.dateEnd).format("LLLL") : null}</td>
                                             <td>
                                                 <Button
                                                     className="btn btn-primary btn btn-secondary fa fa-info-circle fa-lg"

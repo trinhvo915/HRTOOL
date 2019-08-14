@@ -1,50 +1,15 @@
-.custome_dashboard_card {
-    padding-top: 20px;
-    border-radius: 10px 0 0 10px;
-    background-color: aliceblue;
+.initechNode {
+    border: solid 3px orange;
+    border-radius: 3px;
+    padding: 5px;
+    width: 150px;
+    display: inline-block;
 }
 
-.custome_dashboard_card2 {
-    padding-top: 20px;
-    border-radius: 10px 0 0 10px;
-    background-color: aliceblue;
+#initechOrgChart .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
+    border-right: solid 3px orange
 }
 
-.cards {
-    padding-top: 10px
-}
-
-.custom_title {
-    padding: 20px 20px 20px 20px;
-    color: #20a8d8
-}
-
-.lable {
-    color: #20a8d8;
-}
-
-.value {
-    color: #20a8d8;
-}
-
-.custome_dashboard_chart {
-    padding-top: 20px;
-    border-radius: 0 10 10 0;
-    background-color: aliceblue;
-}
-
-.custom_option {
-    padding: 0 20px 20px 15px;
-    margin-top: 20px;
-    color: #20a8d8
-}
-
-.bg-info {
-    border: #49b4db solid 1px;
-    box-shadow: 10px 10px 24px -22px rgba(1,67,125,1);
-    background-color: #ffffff !important
-}
-
-.custom_select_date {
-    margin-left: 20px;
+#initechOrgChart .nodeLineBorderTop {
+    border-top: solid 3px orange;
 }

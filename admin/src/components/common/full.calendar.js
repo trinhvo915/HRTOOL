@@ -29,23 +29,21 @@ export default class FullCalendarCustom extends Component {
           this.calendarRef.calendar.today();
         }
     }
-    this.props.changeDate(this.calendarRef.calendar.state.dateProfile.currentRange);
+    this.props.changeDate(this.calendarRef.calendar.state.dateProfile.activeRange);
   }
 
   componentDidMount = () => {
-    this.props.changeDate(this.calendarRef.calendar.state.dateProfile.currentRange);
+    this.props.changeDate(this.calendarRef.calendar.state.dateProfile.activeRange);
   }
 
   getEvents = (calendars) => {
-    console.log(calendars)
     const events = calendars.map(element => {
       return {
         title: element.calendarType.name,
         start: new Date(element.dateStart),
         end: new Date(element.dateEnd),
         ...element,
-        color: element.user[0].color || '#c2dff5',
-        textColor: '#004377'
+        textColor: `#000000;border:none;font-weight:bold;font-size:10px;font-style:italic;background:linear-gradient(90deg,${element.users.sort(x=>x.color).map((user, i) => { return (user.color + " " + 1 / element.users.length *100*i + "%," + user.color + " " + 1 / element.users.length *100 *(i + 1) + "%") }).join(",")});`
       }
     });
     return events;

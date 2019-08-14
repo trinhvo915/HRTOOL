@@ -9,56 +9,83 @@ export default {
         text: "NEW"
       }
     },
-    {
-      name: "Job Category",
-      url: "/categories",
-      // permissions: ["categories"],
-      icon: "fa fa-list"
-    },
-    {
-      name: "Candidate",
-      url: "/candidates",
-      icon: "fa fa-user"
-    },
-    {
-      name: "Job",
-      url: "/Jobs",
-      icon: "fa fa-tasks"
-    },
+    
     {
       name: "Calendar",
       url: "/calendars",
       icon: "cui-calendar"
     },
+
     {
-      name: "TechnicalSkill",
-      url: "/technicalSkills",
-      icon: "cui-calendar"
+      name: "Task",
+      icon: "cui-task",
+      children: [
+        {
+          name: "Job Category",
+          url: "/categories",
+          icon: "cui-list",
+        },
+        {
+          name: "Job",
+          url: "/Jobs",
+          icon: "cui-magnifying-glass"
+        }
+      ]
     },
-    // {
-    //   name: "Employees",
-    //   url: "/employees",
-    //   icon: "fa fa-users"
-    // },
+
     {
-      name: "Interview Arrangement",
-      url: "/interviews",
-      icon: "fa fa-address-card"
+      name: "Interview",
+      icon: "cui-star",
+      children: [
+        {
+          name: "TechnicalSkill",
+          url: "/technicalSkills",
+          icon: "cui-calendar"
+        },
+        {
+          name: "Candidate",
+          url: "/candidates",
+          icon: "fa fa-user"
+        },
+        {
+          name: "InterviewQA",
+          url: "/interviewQAs",
+          icon: "fa fa-file-pdf-o"
+        },
+        {
+          name: "Interview Arrangement",
+          url: "/interviews",
+          icon: "fa fa-address-card"
+        },
+      ]
     },
+
     {
-      name: "InterviewQA",
-      url: "/interviewQAs",
-      icon: "fa fa-file-pdf-o"
-    },
-    {
-      name: "Email Template",
-      url: "/emailtemplates",
-      icon: "fa fa-address-book"
-    },
-    {
-      name: "User Management",
-      url: "/user-management",
-      icon: "fa fa-users "
+      name: "Setting",
+      icon: "cui-settings ",
+      children: [
+        {
+          name: "User Management",
+          url: "/user-management",
+          icon: "fa fa-users "
+        },
+        {
+          name: "Department",
+          url: "/department",
+          icon: "cui-globe icons"
+        },
+        {
+          name: "Email Template",
+          url: "/emailtemplates",
+          icon: "cui-envelope-letter"
+        },
+        {
+          name: "Report",
+          url: "/report",
+          icon: "cui-file"
+        },
+      ]
     }
+
   ]
 };

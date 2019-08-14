@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\@coreui\icons\css\coreui-icons.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\flag-icon-css\css\flag-icon.min.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\font-awesome\css\font-awesome.min.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\simple-line-icons\css\simple-line-icons.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\slick-carousel\slick\slick.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\slick-carousel\slick\slick-theme.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\@coreui\icons\css\coreui-icons.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\flag-icon-css\css\flag-icon.min.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\font-awesome\css\font-awesome.min.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\simple-line-icons\css\simple-line-icons.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\slick-carousel\slick\slick.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\slick-carousel\slick\slick-theme.css);
 /*!
  * CoreUI - Open Source Dashboard UI Kit
  * @version v2.1.12
@@ -18,9 +18,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\@fullcalendar\core\main.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\@fullcalendar\daygrid\main.css);
-@import url(C:\Users\thien.truong\source\repos\InternDN_HRTools\web\node_modules\@fullcalendar\timegrid\main.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\@fullcalendar\core\main.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\@fullcalendar\daygrid\main.css);
+@import url(C:\Users\hieu.tran\Documents\InternDN_HRTools\web\node_modules\@fullcalendar\timegrid\main.css);
 :root {
   --blue: #20a8d8;
   --indigo: #6610f2;
@@ -11803,7 +11803,8 @@ ol {
   margin-inline-end: 0px;
   padding-inline-start: 40px; }
 
-.table-header, .table-row {
+.table-header,
+.table-row {
   text-align: center !important; }
 
 .col-md-5 {
@@ -11860,7 +11861,6 @@ ol {
   cursor: pointer; }
 
 .fa {
-  color: #444444;
   margin-right: 7px;
   margin-left: 5px; }
 
@@ -12798,9 +12798,6 @@ header {
   color: #555;
   text-align: center;
   margin-bottom: 25px; }
-
-a {
-  color: #074E8C; }
 
 .scrollbar {
   margin-left: 30px;

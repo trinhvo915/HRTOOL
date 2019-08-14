@@ -37,72 +37,78 @@ using DinkToPdf.Contracts;
 using DinkToPdf;
 using RazorLight;
 using System.Reflection;
+using Orient.Base.Net.Core.Api.Core.Business.Models.Users;
+using Microsoft.AspNetCore.Authorization;
+using Orient.Base.Net.Core.Api.Core.Business.Filters.Models;
+using System.Configuration;
+using Orient.Base.Net.Core.Api.Core.DataAccess.Repositories;
 
 namespace Orient.Base.Net.Core.Api
 {
-	public class Startup
-	{
-		/// <summary>
-		/// 
-		/// </summary>
-		public static IConfigurationRoot Configuration;
+    public class Startup
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public static IConfigurationRoot Configuration;
         private readonly IHostingEnvironment _hostingEnvironment;
 
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="env"></param>
-		public Startup(IHostingEnvironment env)
-		{
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="env"></param>
+        public Startup(IHostingEnvironment env)
+        {
             _hostingEnvironment = env;
             var builder = new ConfigurationBuilder()
-			  .SetBasePath(env.ContentRootPath)
-			  .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+              .SetBasePath(env.ContentRootPath)
+              .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
-			builder.AddEnvironmentVariables();
-			Configuration = builder.Build();
-
-
-			var logPath = Configuration["AppSettings:LoggingPath"] + "Orient-{Date}-" + System.Environment.MachineName + ".txt";
-			Log.Logger = new LoggerConfiguration()
-			  .MinimumLevel.Warning()
-			  .WriteTo.RollingFile(logPath, retainedFileCountLimit: 15)
-			  .CreateLogger();
-		}
-
-		// This method gets called by the runtime. Use this method to add services to the container.
-		public void ConfigureServices(IServiceCollection services)
-		{
-			// Add service and create Policy with options
-			services.AddCors(options =>
-			{
-				options.AddPolicy("CorsPolicy",
-				  builder => builder.AllowAnyOrigin()
-					.AllowAnyMethod()
-					.AllowAnyHeader()
-					.AllowCredentials());
-			});
-
-			services.AddMvc().AddJsonOptions(opt =>
-			{
-				opt.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-			})
-			  .AddJsonOptions(opt =>
-			  {
-				  opt.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
-			  });
-
-			services.AddSingleton(Configuration);
-			services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            builder.AddEnvironmentVariables();
+            Configuration = builder.Build();
 
 
-			services.AddLogging(loggingBuilder =>
-			{
-				loggingBuilder.AddSerilog(dispose: true);
-				loggingBuilder.SetMinimumLevel(LogLevel.Information);
-				loggingBuilder.AddFilter<SerilogLoggerProvider>(null, LogLevel.Trace);
-			});
-			services.AddSingleton<ILoggerProvider, SerilogLoggerProvider>();
+            var logPath = Configuration["AppSettings:LoggingPath"] + "Orient-{Date}-" + System.Environment.MachineName + ".txt";
+            Log.Logger = new LoggerConfiguration()
+              .MinimumLevel.Warning()
+              .WriteTo.RollingFile(logPath, retainedFileCountLimit: 15)
+              .CreateLogger();
+        }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            // Add service and create Policy with options
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                  builder => builder.SetIsOriginAllowed(host => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    );
+            });
+
+            services.AddMvc().AddJsonOptions(opt =>
+            {
+                opt.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            })
+              .AddJsonOptions(opt =>
+              {
+                  opt.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+              });
+
+            services.AddSingleton(Configuration);
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+
+            services.AddLogging(loggingBuilder =>
+            {
+                loggingBuilder.AddSerilog(dispose: true);
+                loggingBuilder.SetMinimumLevel(LogLevel.Information);
+                loggingBuilder.AddFilter<SerilogLoggerProvider>(null, LogLevel.Trace);
+            });
+            services.AddSingleton<ILoggerProvider, SerilogLoggerProvider>();
 
             //Config Automapper map
             Mapper.Initialize(config =>
@@ -116,71 +122,79 @@ namespace Orient.Base.Net.Core.Api
                 config.AddProfile<StepInJobProfile>();
                 config.AddProfile<QuestionProfile>();
                 config.AddProfile<AnswerProfile>();
+                config.AddProfile<DepartmentProfile>();
             });
 
-			var conn = Configuration.GetConnectionString("DefaultConnectionString");
-			services.AddDbContextPool<OrientNetCoreDbContext>(options => options.UseSqlServer(conn));
+            var conn = Configuration.GetConnectionString("DefaultConnectionString");
+            services.AddDbContextPool<OrientNetCoreDbContext>(options => options.UseSqlServer(conn));
 
-			//Register Repository
-			services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            //Register Repository
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 
-			//Register Service
-			services.AddScoped<IRoleService, RoleService>();
-			services.AddScoped<IEmailService, EmailService>();
-			services.AddScoped<ISSOAuthService, SSOAuthService>();
-			services.AddScoped<IUserService, UserService>();
-			services.AddScoped<ICategoryService, CategoryService>();
-			services.AddScoped<IJobService, JobService>();
-			services.AddScoped<IEmailTemplateService, EmailTemplateService>();
+            //Config Ldap
+            services.AddScoped<IAuthenticationService, LdapAuthenticationService>();
+
+            //Register Service
+            services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ISSOAuthService, SSOAuthService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IJobService, JobService>();
+            services.AddScoped<IEmailTemplateService, EmailTemplateService>();
             services.AddScoped<IStepInJobService, StepInJobService>();
-			services.AddScoped<ICommentService, CommentService>();
-			services.AddScoped<IInterviewService, InterviewService>();
-			services.AddScoped<ICandidateService, CandidateService>();
-			services.AddScoped<ICalendarService, CalendarService>();
-			services.AddScoped<ICalendarTypeService, CalendarTypeService>();
-			services.AddScoped<ITechnicalSkillService, TechnicalSkillService>();
+            services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<IInterviewService, InterviewService>();
+            services.AddScoped<ICandidateService, CandidateService>();
+            services.AddScoped<ICalendarService, CalendarService>();
+            services.AddScoped<ICalendarTypeService, CalendarTypeService>();
+            services.AddScoped<ITechnicalSkillService, TechnicalSkillService>();
 
             services.AddScoped<IQuestionService, QuestionService>();
             services.AddScoped<IAnswerService, AnswerService>();
 
             services.AddScoped<IPDFService, PDFService>();
 
+            services.AddScoped<IDepartmentService, DepartmentService>();
+
             //Register MemoryCacheManager
             services.AddScoped<ICacheManager, MemoryCacheManager>();
-			//Register MemoryCacheManager
-			services.AddScoped<ICacheManager, MemoryCacheManager>();
-			services.AddHostedService<EmailBackgroundTask>();
-			// Set Service Provider for IoC Helper
-			IoCHelper.SetServiceProvider(services.BuildServiceProvider());
 
-			services.AddMvc(option =>
-			{
-				option.Filters.Add<HandleExceptionFilterAttribute>();
-			});
+            //Register Hosted Services
+            services.AddHostedService<BackgroundTask>();
+            //services.AddHostedService<EmailBackgroundTask>();
 
-			// Register the Swagger generator, defining one or more Swagger documents
-			services.AddSwaggerGen(c =>
-			{
-				c.SwaggerDoc("v1", new Info
-				{
-					Version = "v1",
-					Title = "Orient API",
-					Description = "ASP.NET Core API.",
-					TermsOfService = "None",
-					Contact = new Contact { Name = "DINH KHAC HOAI PHUNG", Email = "phung.dinh@orientsoftware.com", Url = "" },
-				});
+            // Set Service Provider for IoC Helper
+            IoCHelper.SetServiceProvider(services.BuildServiceProvider());
 
-				c.DescribeAllParametersInCamelCase();
-				c.OperationFilter<AccessTokenHeaderParameterOperationFilter>();
+            services.AddMvc(option =>
+            {
+                option.Filters.Add<HandleExceptionFilterAttribute>();
+            });
 
-				// Set the comments path for the Swagger JSON and UI.
-				var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-				var xmlPath = Path.Combine(basePath, "Orient.Base.Net.Core.Api.xml");
-				c.IncludeXmlComments(xmlPath);
-			});
+            // Register the Swagger generator, defining one or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Orient API",
+                    Description = "ASP.NET Core API.",
+                    TermsOfService = "None",
+                    Contact = new Contact { Name = "DINH KHAC HOAI PHUNG", Email = "phung.dinh@orientsoftware.com", Url = "" },
+                });
 
-			services.AddAuthentication(Microsoft.AspNetCore.Server.IISIntegration.IISDefaults.AuthenticationScheme);
-            
+                c.DescribeAllParametersInCamelCase();
+                c.OperationFilter<AccessTokenHeaderParameterOperationFilter>();
+
+                // Set the comments path for the Swagger JSON and UI.
+                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                var xmlPath = Path.Combine(basePath, "Orient.Base.Net.Core.Api.xml");
+                c.IncludeXmlComments(xmlPath);
+            });
+
+            services.AddAuthentication(Microsoft.AspNetCore.Server.IISIntegration.IISDefaults.AuthenticationScheme);
+
             // Add DinkToPDF Context
             var architectureFolder = (IntPtr.Size == 8) ? "64 bit" : "32 bit";
             var wkHtmlToPdfPath = Path.Combine(_hostingEnvironment.ContentRootPath, $"Core\\Common\\PDFNativeLib\\wkhtmltox\\v0.12.4\\{architectureFolder}\\libwkhtmltox");
@@ -198,325 +212,244 @@ namespace Orient.Base.Net.Core.Api
                 return engine;
             });
 
-			// config signal R
-			services.AddSignalR();
-		}
+            // config signal R
+            services.AddSignalR();
+        }
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-		{
-			// global policy - assign here or on each controller
-			app.UseCors("CorsPolicy");
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            // global policy - assign here or on each controller
+            app.UseCors("CorsPolicy");
 
-			if (env.IsDevelopment())
-			{
-				app.UseDeveloperExceptionPage();
-				loggerFactory.AddSerilog();
-				loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-				loggerFactory.AddDebug(LogLevel.Debug);
-			}
-			else if (env.IsProduction())
-			{
-				loggerFactory.AddSerilog();
-				loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-				loggerFactory.AddDebug(LogLevel.Warning);
-			}
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                loggerFactory.AddSerilog();
+                loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+                loggerFactory.AddDebug(LogLevel.Debug);
+            }
+            else if (env.IsProduction())
+            {
+                loggerFactory.AddSerilog();
+                loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+                loggerFactory.AddDebug(LogLevel.Warning);
+            }
 
-			// Enable middleware to serve generated Swagger as a JSON endpoint.
-			app.UseSwagger();
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
 
-			// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
-			app.UseSwaggerUI(c =>
-			{
-				c.SwaggerEndpoint("/swagger/v1/swagger.json", "Orient API V1");
-			});
-			app.UseMvc();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Orient API V1");
+            });
 
-			// Auto run migration
-			RunMigration(app);
+            app.UseMvc();
 
-			// Initialize Data
-			InitDataRole();
-			InitUserAdmin();
-			InitUser();
-			InitCalendarType();
-			InitEmailTemplate();
+            // Auto run migration
+            RunMigration(app);
 
-			// config signal R 
-			app.UseSignalR(routes =>
-			{
-				routes.MapHub<NotificationHub>("/chatHub");
-			});
-		}
+            // Initialize Data
+            InitDataRole();
+            InitUserSuperAdmin();
+            InitDataDepartment();
+            InitCalendarType();
+            InitEmailTemplate();
 
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="app"></param>
-		private void RunMigration(IApplicationBuilder app)
-		{
-			using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-			{
-				scope.ServiceProvider.GetRequiredService<OrientNetCoreDbContext>().Database.Migrate();
-			}
-		}
+            // config signal R 
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<NotificationHub>("/chatHub");
+            });
+        }
 
-		private void InitDataRole()
-		{
-			var roleRepository = IoCHelper.GetInstance<IRepository<Role>>();
-			var roles = new[]
-			{
-				new Role {
-					Id = RoleConstants.SuperAdminId,
-					Name = "Super Admin"
-				},
-				new Role
-				{
-					Id = RoleConstants.BODId,
-					Name = "BOD"
-				},
-				new Role
-				{
-					Id = RoleConstants.HRMId,
-					Name = "HR Manager"
-				},
-				new Role
-				{
-					Id = RoleConstants.HRId,
-					Name = "HR"
-				},
-				new Role
-				{
-					Id = RoleConstants.DevId,
-					Name = "Dev"
-				}
-			};
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
+        private void RunMigration(IApplicationBuilder app)
+        {
+            using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetRequiredService<OrientNetCoreDbContext>().Database.Migrate();
+            }
+        }
 
-			roleRepository.GetDbContext().Roles.AddIfNotExist(x => x.Name, roles);
-			roleRepository.GetDbContext().SaveChanges();
-		}
+        private void InitDataRole()
+        {
+            var roleRepository = IoCHelper.GetInstance<IRepository<Role>>();
+            var roles = new[]
+            {
+                new Role {
+                    Id = RoleConstants.SuperAdminId,
+                    Name = "Super Admin"
+                },
+                new Role {
+                    Id = RoleConstants.AdminId,
+                    Name = "Admin"
+                },
+                new Role {
+                    Id = RoleConstants.NormalUserId,
+                    Name = "Normal"
+                },
+            };
 
-		private void InitUserAdmin()
-		{
-			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
-			if (userRepository.GetAll().Count() > 1)
-			{
-				return;// It's already init
-			}
+            roleRepository.GetDbContext().Roles.AddIfNotExist(x => x.Name, roles);
+            roleRepository.GetDbContext().SaveChanges();
+        }
 
-			var user = new User();
-			user.Name = "Super Admin";
-			user.Email = "phung.dinh@orientsoftware.com";
-			user.Mobile = "0983260830";
+        private void InitDataDepartment()
+        {
+            var departmentRepository = IoCHelper.GetInstance<IRepository<Department>>();
+            var departments = new[]
+            {
+                new Department {
+                    Id = DepartmentConstants.OfficeManager,
+                    Name = "Office Manager",
+                    ParentId=null
+                },
+                new Department {
+                    Id = DepartmentConstants.Recruitment,
+                    Name = "Recruitment",
+                    ParentId=DepartmentConstants.OfficeManager
+                },
+                new Department {
+                    Id = DepartmentConstants.CB,
+                    Name = "C&B",
+                    ParentId=DepartmentConstants.OfficeManager
+                },
+                new Department {
+                    Id = DepartmentConstants.AdminReceptionist,
+                    Name = "Admin cum Receptionist",
+                    ParentId=DepartmentConstants.OfficeManager
+                },
+                new Department {
+                    Id = DepartmentConstants.AdminEngagement,
+                    Name = "Admin & Engagement",
+                    ParentId=DepartmentConstants.OfficeManager
+                },
+            };
 
-			var password = "orient@123";
-			password.GeneratePassword(out string saltKey, out string hashPass);
+            departmentRepository.GetDbContext().Departments.AddIfNotExist(x => x.Name, departments);
+            departmentRepository.GetDbContext().SaveChanges();
+        }
 
-			user.Password = hashPass;
-			user.PasswordSalt = saltKey;
+        private void InitUserSuperAdmin()
+        {
+            var userRepository = IoCHelper.GetInstance<IRepository<User>>();
+            if (userRepository.GetAll().Count() > 1)
+            {
+                return;// It's already init
+            }
 
-			user.UserInRoles = new List<UserInRole>()
-					{
-						new UserInRole()
-						{
-							UserId = UserConstants.SuperAdminUserId,
-							RoleId = RoleConstants.SuperAdminId
-						}
-					};
+            var user = new User();
+            user.Name = "Super Admin";
+            user.Email = "phung.dinh@orientsoftware.com";
+            user.Mobile = "0983260830";
 
-			var users = new[]
-			{
-				user
-			};
+            var password = "orient@123";
+            password.GeneratePassword(out string saltKey, out string hashPass);
 
-			userRepository.GetDbContext().Users.AddIfNotExist(x => x.Email, users);
-			userRepository.GetDbContext().SaveChanges();
-		}
+            user.Password = hashPass;
+            user.PasswordSalt = saltKey;
 
-		private void InitUser()
-		{
-			var userRepository = IoCHelper.GetInstance<IRepository<User>>();
+            user.UserInRoles = new List<UserInRole>()
+                    {
+                        new UserInRole()
+                        {
+                            UserId = UserConstants.SuperAdminUserId,
+                            RoleId = RoleConstants.SuperAdminId
+                        }
+                    };
 
-			var userDevs = new User[] {
-				new User() {
-					Email = "quang.nguyen@orientsoftware.com",
-					Name = "Quang Nguyen",
-				},
-				new User() {
-					Email = "thanh.nguyenvan@orientsoftware.com",
-					Name = "Thanh Nguyen",
-				},
-				new User() {
-					Email = "phuong.trinh@orientsoftware.com",
-					Name = "Phuong Trinh",
-				}
-			};
+            var users = new[]
+            {
+                user
+            };
 
-			var userHRs = new User[] {
-				new User() {
-					Email = "quan.le@orientsoftware.com",
-					Name = "Quan Le",
-				},
-				new User() {
-					Email = "liu.huynh@orientsoftware.com",
-					Name = "Liu Huynh",
-				}
-			};
+            userRepository.GetDbContext().Users.AddIfNotExist(x => x.Email, users);
+            userRepository.GetDbContext().SaveChanges();
+        }
 
-			var userHRMs = new User[] {
-				new User() {
-					Email = "thoai.tran@orientsoftware.com",
-					Name = "Thoai Tran",
-				}
-			};
+        private void InitCalendarType()
+        {
+            var calendarTypeRepository = IoCHelper.GetInstance<IRepository<CalendarType>>();
 
-			var userBODs = new User[] {
-				new User() {
-					Email = "trinh.vo@orientsoftware.com",
-					Name = "Trinh Vo",
-				}
-			};
+            var calendarTypes = new[]
+            {
+                new CalendarType {
+                    Name = "Interview"
+                },
+                new CalendarType {
+                    Name = "New Comer"
+                },
+                new CalendarType {
+                    Name = "Birthday"
+                },
+                new CalendarType {
+                    Name = "Other"
+                },
+            };
 
-			foreach (var user in userDevs)
-			{
-				user.UserInRoles = new List<UserInRole>()
-				{
-					new UserInRole()
-					{
-						UserId = user.Id,
-						RoleId = RoleConstants.DevId
-					}
-				};
-			}
+            foreach (var calendarType in calendarTypes)
+            {
+                if (calendarTypeRepository.GetDbContext().CalendarTypes.FirstOrDefault(x => x.Name == calendarType.Name) == null)
+                {
+                    calendarTypeRepository.GetDbContext().CalendarTypes.Add(calendarType);
+                }
+            }
 
-			foreach (var user in userHRs)
-			{
-				user.UserInRoles = new List<UserInRole>()
-				{
-					new UserInRole()
-					{
-						UserId = user.Id,
-						RoleId = RoleConstants.HRId
-					}
-				};
-			}
+            calendarTypeRepository.GetDbContext().SaveChanges();
+        }
 
-			foreach (var user in userHRMs)
-			{
-				user.UserInRoles = new List<UserInRole>()
-				{
-					new UserInRole()
-					{
-						UserId = user.Id,
-						RoleId = RoleConstants.HRMId
-					}
-				};
-			}
+        private void InitEmailTemplate()
+        {
+            var emailTemplateRepository = IoCHelper.GetInstance<IRepository<EmailTemplate>>();
 
-			foreach (var user in userBODs)
-			{
-				user.UserInRoles = new List<UserInRole>()
-				{
-					new UserInRole()
-					{
-						UserId = user.Id,
-						RoleId = RoleConstants.BODId
-					}
-				};
-			}
+            if (emailTemplateRepository.GetAll().Count() >= 3)
+            {
+                return;
+            }
 
-			var users = userDevs.Concat(userHRs).Concat(userHRMs).Concat(userBODs).ToArray();
-
-			foreach (var user in users)
-			{
-				user.Mobile = "01234567890";
-
-				var password = "orient@123";
-				password.GeneratePassword(out string saltKey, out string hashPass);
-
-				user.Password = hashPass;
-				user.PasswordSalt = saltKey;
-			}
-
-			userRepository.GetDbContext().Users.AddIfNotExist(x => x.Email, users);
-			userRepository.GetDbContext().SaveChanges();
-		}
-
-		private void InitCalendarType()
-		{
-			var calendarTypeRepository = IoCHelper.GetInstance<IRepository<CalendarType>>();
-
-			var calendarTypes = new[]
-			{
-				new CalendarType {
-					Name = "Interview"
-				},
-				new CalendarType {
-					Name = "New Comer"
-				},
-				new CalendarType {
-					Name = "Birthday"
-				},
-			};
-
-			foreach (var calendarType in calendarTypes)
-			{
-				if (calendarTypeRepository.GetDbContext().CalendarTypes.FirstOrDefault(x => x.Name == calendarType.Name) == null)
-				{
-					calendarTypeRepository.GetDbContext().CalendarTypes.Add(calendarType);
-				}
-			}
-
-			calendarTypeRepository.GetDbContext().SaveChanges();
-		}
-
-		private void InitEmailTemplate()
-		{
-			var emailTemplateRepository = IoCHelper.GetInstance<IRepository<EmailTemplate>>();
-
-			if (emailTemplateRepository.GetAll().Count() >= 3)
-			{
-				return;
-			}
-
-			var emailTemplates = new EmailTemplate[]
-			{
-				new EmailTemplate()
-				{
-					Name = "Job",
-					Subject = "You have a new job.",
-					From = "quang.nguyen@orientsoftware.com",
-					FromName = "Quang",
-					CC = "",
-					BCC = "",
-					Body = DataInitializeHelper.GetResourceContent("JobRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
-					Type = EmailTemplateType.Job,
-				},
-				new EmailTemplate()
-				{
-					Name = "Interview",
-					Subject = "You have a new interview.",
-					From = "phuong.trinh@orientsoftware.com",
-					FromName = "Phuong",
-					CC = "",
-					BCC = "",
-					Body = DataInitializeHelper.GetResourceContent("InterviewRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
-					Type = EmailTemplateType.Interview,
-				},
-				new EmailTemplate()
-				{
-					Name = "Calendar",
-					Subject = "You have a new remind.",
-					From = "thanh.nguyen@orientsoftware.com",
-					FromName = "Thanh",
-					CC = "",
-					BCC = "",
-					Body = DataInitializeHelper.GetResourceContent("CalendarRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
-					Type = EmailTemplateType.Calendar
-				}
-			};
+            var emailTemplates = new EmailTemplate[]
+            {
+                new EmailTemplate()
+                {
+                    Name = "Job",
+                    Subject = "You have a new job.",
+                    From = "quang.nguyen@orientsoftware.com",
+                    FromName = "Quang",
+                    CC = "",
+                    BCC = "",
+                    Body = DataInitializeHelper.GetResourceContent("JobRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
+                    Type = EmailTemplateType.Job,
+                },
+                new EmailTemplate()
+                {
+                    Name = "Interview",
+                    Subject = "You have a new interview.",
+                    From = "phuong.trinh@orientsoftware.com",
+                    FromName = "Phuong",
+                    CC = "",
+                    BCC = "",
+                    Body = DataInitializeHelper.GetResourceContent("InterviewRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
+                    Type = EmailTemplateType.Interview,
+                },
+                new EmailTemplate()
+                {
+                    Name = "Calendar",
+                    Subject = "You have a new remind.",
+                    From = "thanh.nguyen@orientsoftware.com",
+                    FromName = "Thanh",
+                    CC = "",
+                    BCC = "",
+                    Body = DataInitializeHelper.GetResourceContent("CalendarRemindTemplate.txt", DataSetupResourceType.EmailTemplate),
+                    Type = EmailTemplateType.Calendar
+                }
+            };
             emailTemplateRepository.GetDbContext().EmailTemplates.AddRange(emailTemplates);
-			emailTemplateRepository.GetDbContext().SaveChanges();
-		}
-	}
+            emailTemplateRepository.GetDbContext().SaveChanges();
+        }
+    }
 }

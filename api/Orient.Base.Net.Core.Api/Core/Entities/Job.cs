@@ -3,6 +3,7 @@ using Orient.Base.Net.Core.Api.Core.Entities.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Orient.Base.Net.Core.Api.Core.Entities
 {
@@ -12,6 +13,9 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         public Job() : base()
         {
             Status = StatusEnums.Status.Pending;
+            DateRepeat = 0;
+            IsDisable = false;
+            IsProcess = false;
         }
 
         [StringLength(512)]
@@ -42,5 +46,13 @@ namespace Orient.Base.Net.Core.Api.Core.Entities
         public List<AttachmentInJob> AttachmentInJobs { get; set; }
 
         public List<StepInJob> StepInJobs { get; set; }
+
+        public int DateRepeat { get; set; }
+
+        public bool IsProcess { get; set; }
+
+        public bool IsDisable { get; set; }
+
+        public Guid? IdLink { get; set; }
     }
 }

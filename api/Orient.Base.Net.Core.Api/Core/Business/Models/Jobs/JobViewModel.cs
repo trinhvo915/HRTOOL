@@ -39,6 +39,10 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
                 Comments = job.Comments != null ? job.Comments.OrderBy(x => x.CreatedOn).Select(y => new CommentViewModel(y)).ToArray() : null;
                 Attachments = job.AttachmentInJobs != null ? job.AttachmentInJobs.Select(y => new AttachmentViewModel(y.Attachment)).ToArray() : null;
                 Steps = job.StepInJobs != null ? job.StepInJobs.Select(x => new StepInJobViewModel(x)).OrderBy(x => x.Order).ToArray() : null;
+                DateRepeat = job.DateRepeat;
+                IsProcess = job.IsProcess;
+                IsDisable = job.IsDisable;
+                IdLink = job.IdLink;
             }
         }
 
@@ -71,5 +75,13 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Jobs
         public AttachmentViewModel[] Attachments { get; set; }
 
         public StepInJobViewModel[] Steps { get; set; }
+
+        public int DateRepeat { get; set; }
+
+        public bool IsProcess { get; set; }
+
+        public bool IsDisable { get; set; }
+
+        public Guid? IdLink { get; set; }
     }
 }

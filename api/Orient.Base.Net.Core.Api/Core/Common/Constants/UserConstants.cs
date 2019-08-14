@@ -19,6 +19,6 @@ namespace Orient.Base.Net.Core.Api.Core.Common.Constants
         public const string SB = "1033D9FB-FAF4-43DB-8D0D-83185400DFE3";
         public static Guid SuperUserId = new Guid(SB);
 
-        public static string Color = "#000000";
+        public static string Color = "#c2dff5";
     }
 }

@@ -11,7 +11,7 @@ namespace Orient.Base.Net.Core.Api.Controllers
     [Route("api/jobs")]
     [EnableCors("CorsPolicy")]
     [ValidateModel]
-    public class JobController : Controller
+    public class JobController : BaseController
     {
         private readonly IJobService _jobService;
 
@@ -42,9 +42,10 @@ namespace Orient.Base.Net.Core.Api.Controllers
         }
 
         [HttpPost()]
+        [CustomAuthorize]
         public async Task<IActionResult> PostJob([FromBody] JobManageModel jobManageModel)
         {
-            var responseModel = await _jobService.CreateJobAsync(jobManageModel);
+            var responseModel = await _jobService.CreateJobAsync(CurrentUserId, jobManageModel);
             if (responseModel.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 return Ok(responseModel);

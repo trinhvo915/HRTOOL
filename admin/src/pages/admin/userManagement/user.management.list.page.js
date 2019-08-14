@@ -5,11 +5,13 @@ import {
   getUserManagementList,
   resetColor
 } from "../../../actions/user.management.list.action";
+import SelectInput from "../../../components/common/select.input"
+import { getDepartmentList } from "../../../actions/department.list.action";
 import { getRoleList } from "../../../actions/role.list.action";
 import "react-color-picker/index.css";
 import { SketchPicker } from "react-color";
 import { pagination } from "../../../constant/app.constant";
-import { Row, Col, Button, Table } from "reactstrap";
+import { Row, Col, Button, Label, Table, FormGroup } from "reactstrap";
 import Pagination from "../../../components/pagination/Pagination";
 import lodash from "lodash";
 import Form from "react-validation/build/form";
@@ -98,6 +100,14 @@ class UserManagementPage extends Component {
     });
   };
 
+  onModelChangeDepartment = el => {
+    let inputName = el.target.name;
+    let inputValue = el.target.value;
+    let item = Object.assign({}, this.state.item);
+    item[inputName] = inputValue;
+    this.setState({ item }, () => console.log(this.state.item));
+  };
+
   changeComplete = color => {
     let item = Object.assign({}, this.state.item);
     item.color = color.hex;
@@ -115,14 +125,12 @@ class UserManagementPage extends Component {
   };
 
   resetColorAPI = async item => {
-    console.log(item);
     const { id, color, roles } = Object.assign({}, item);
     const user = {
       color,
       id,
       roleIds: roles.map(role => role.id)
     };
-    console.log(user);
     const { isDesc, sortName } = this.state;
 
     try {
@@ -140,8 +148,9 @@ class UserManagementPage extends Component {
   }
 
   updateUserManagementList = async () => {
-    const { id, color, roleIds } = Object.assign({}, this.state.item);
-    const user = { color, id, roleIds };
+    const { id, color, roleIds, departmentId, department } = Object.assign({}, this.state.item);
+    let IdDepartment = departmentId ? departmentId : (department ? department.id : null);
+    const user = { color, id, roleIds, "departmentId": IdDepartment };
     const { isDesc, sortName } = this.state;
     try {
       await ApiUserManagement.updateUserManagementList(user);
@@ -161,7 +170,6 @@ class UserManagementPage extends Component {
   }
 
   toggleModalInfo = (item, title) => {
-    console.log(this.state);
     this.setState(prevState => ({
       isShowInfoModal: !prevState.isShowInfoModal,
       item: item || {},
@@ -205,10 +213,10 @@ class UserManagementPage extends Component {
   componentDidMount = () => {
     this.getUserManagementList();
     this.getRoleList();
+    this.props.getDepartmentList();
   };
 
   render() {
-    console.log("State hien tai", this.state);
     const titlecolor = "Color";
     const { item, isShowInfoModal } = this.state;
     const {
@@ -219,7 +227,7 @@ class UserManagementPage extends Component {
     } = this.props.userManagementList;
     const hasResults = sources && sources.length > 0;
     const roleList = Object.assign([], this.props.roleList.roleList.sources);
-
+    const { departmentList } = this.props.departmentList;
     return (
       <div>
         <ModalInfo
@@ -237,7 +245,21 @@ class UserManagementPage extends Component {
                 }}
               >
                 <Row>
-                  <Col xs="6">
+                  <Col xs="3">
+                    {/* Candidate */}
+                    <FormGroup>
+                      <SelectInput
+                        options={departmentList.sources || []}
+                        title="Candidate: "
+                        name="departmentId"
+                        required={true}
+                        placeholder="Choose Department"
+                        value={item.departmentId ? item.departmentId : (item.department ? item.department.id : "")}
+                        onChange={this.onModelChangeDepartment} >
+                      </SelectInput>
+                    </FormGroup>
+                  </Col>
+                  <Col xs="3">
                     <MultipleSelect
                       name="roleIds"
                       title="Role"
@@ -309,11 +331,11 @@ class UserManagementPage extends Component {
                       this.state.activeSort === "Name"
                         ? "active-sort"
                         : "disactive-sort"
-                    } ${
+                      } ${
                       !this.state.isDesc
                         ? "fa fa-caret-down fa-lg"
                         : "fa fa-caret-up fa-lg"
-                    }`}
+                      }`}
                   />
                 </th>
                 <th>Email</th>
@@ -327,13 +349,14 @@ class UserManagementPage extends Component {
                       this.state.activeSort === "Role"
                         ? "active-sort"
                         : "disactive-sort"
-                    } ${
+                      } ${
                       !this.state.isDesc
                         ? "fa fa-caret-down fa-lg"
                         : "fa fa-caret-up fa-lg"
-                    }`}
+                      }`}
                   />
                 </th>
+                <th>Department</th>
                 <th>Color</th>
                 <th className="custom_action">Action</th>
               </tr>
@@ -358,6 +381,7 @@ class UserManagementPage extends Component {
                           })
                           .join(", ")}
                       </td>
+                      <td>{itemData.department != null ? itemData.department.name : ""}</td>
                       <td>
                         <div>
                           <i
@@ -372,13 +396,13 @@ class UserManagementPage extends Component {
                         </div>
                       </td>
                       <td>
+                        {console.log(itemData)}
                         <div className="custom_action_column">
                           <Button
                             className="btn btn-primary fa fa-pencil"
                             onClick={() => this.showUpdateModal(itemData)}
                             style={{ fontSize: 20 }}
                           />
-
                           <Button
                             className="btn-success"
                             onClick={() => this.resetColor(itemData)}
@@ -408,21 +432,16 @@ class UserManagementPage extends Component {
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    roleList: state.roleList,
-    userManagementList: state.userManagementList
-  };
-};
-
-const mapDispathToProps = {
-  getUserManagementList,
-  getRoleList,
-  resetColor
-};
-
 export default connect(
-  mapStateToProps,
-  mapDispathToProps
+  state => ({
+    roleList: state.roleList,
+    userManagementList: state.userManagementList,
+    departmentList: state.departmentList
+  }),
+  {
+    getUserManagementList,
+    getRoleList,
+    resetColor,
+    getDepartmentList
+  }
 )(UserManagementPage);

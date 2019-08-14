@@ -1,5 +1,6 @@
 export const URL_ENPOINTS = {
-  MEDIA: '/media',
+  MEDIA: 'media',
+  UPLOAD_FILES: '/upload-files',
   INCREDIENTS: '/incredients',
   CUSTOMERS: '/customers',
   SETTINGS: '/settings',

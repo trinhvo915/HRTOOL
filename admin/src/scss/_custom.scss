@@ -38,7 +38,8 @@
 }
 
 .img-avatar{
-  height: 30px;
+  height: 40px;
+  margin-right: 3vh
 }
 
 .dropdown-menu-right{
@@ -405,4 +406,8 @@ ol {
 
 .d-flex{
   align-items: center;
+}
+
+p,span{
+  white-space: pre-wrap;
 }

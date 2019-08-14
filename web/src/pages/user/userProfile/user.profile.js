@@ -27,7 +27,6 @@ class UserProfile extends Component {
 
         const UserData = this.props.profile.profile
 
-        console.log(UserData)
         return (
             <Row>
                 <Col lg="2"/>

@@ -15,85 +15,95 @@ using System.Threading.Tasks;
 
 namespace Orient.Base.Net.Core.Api.Core.Business.Services
 {
-    public interface IRoleService
-    {
-        Task<PagedList<RoleViewModel>> ListRoleAsync(RoleRequestListViewModel userRequestListViewModel);
-        Task<RoleViewModel> GetRoleByNameAsync(string name);
-    }
+	public interface IRoleService
+	{
+		Task<PagedList<RoleViewModel>> ListRoleAsync(RoleRequestListViewModel userRequestListViewModel);
+		Task<RoleViewModel> GetRoleByNameAsync(string name);
 
-    public class RoleService : IRoleService
-    {
-        #region Fields
+		Task<IEnumerable<RoleViewModel>> GetRoleAdmin();
 
-        private readonly IRepository<Role> _roleRepository;
-        private readonly ILogger _logger;
-        private readonly IOptions<AppSettings> _appSetting;
+	}
 
-        #endregion
+	public class RoleService : IRoleService
+	{
+		#region Fields
 
-        #region Constructor
+		private readonly IRepository<Role> _roleRepository;
+		private readonly ILogger _logger;
+		private readonly IOptions<AppSettings> _appSetting;
 
-        public RoleService(IRepository<Role> roleRepository, ILogger<RoleService> logger, IOptions<AppSettings> appSetting
-            )
-        {
-            _roleRepository = roleRepository;
-            _logger = logger;
-            _appSetting = appSetting;
-        }
+		#endregion
 
-        #endregion
+		#region Constructor
 
-        public async Task<PagedList<RoleViewModel>> ListRoleAsync(RoleRequestListViewModel roleRequestListViewModel)
-        {
-            var list = await GetAll().Where(x => (string.IsNullOrEmpty(roleRequestListViewModel.Query)
-                        || (x.Name.Contains(roleRequestListViewModel.Query)))
-                    ).Select(x => new RoleViewModel(x)).ToListAsync();
+		public RoleService(IRepository<Role> roleRepository, ILogger<RoleService> logger, IOptions<AppSettings> appSetting
+			)
+		{
+			_roleRepository = roleRepository;
+			_logger = logger;
+			_appSetting = appSetting;
+		}
 
-            var roleViewModelProperties = GetAllPropertyNameOfViewModel();
-            var requestPropertyName = !string.IsNullOrEmpty(roleRequestListViewModel.SortName) ? roleRequestListViewModel.SortName.ToLower() : string.Empty;
-            string matchedPropertyName = roleViewModelProperties.FirstOrDefault(x => x == requestPropertyName);
+		#endregion
 
-            if (string.IsNullOrEmpty(matchedPropertyName))
-            {
-                matchedPropertyName = "Name";
-            }
+		public async Task<PagedList<RoleViewModel>> ListRoleAsync(RoleRequestListViewModel roleRequestListViewModel)
+		{
+			var list = await GetAll().Where(x => (string.IsNullOrEmpty(roleRequestListViewModel.Query)
+						|| (x.Name.Contains(roleRequestListViewModel.Query)))
+					).Select(x => new RoleViewModel(x)).ToListAsync();
 
-            var type = typeof(RoleViewModel);
-            var sortProperty = type.GetProperty(matchedPropertyName);
+			var roleViewModelProperties = GetAllPropertyNameOfViewModel();
+			var requestPropertyName = !string.IsNullOrEmpty(roleRequestListViewModel.SortName) ? roleRequestListViewModel.SortName.ToLower() : string.Empty;
+			string matchedPropertyName = roleViewModelProperties.FirstOrDefault(x => x == requestPropertyName);
 
-            list = roleRequestListViewModel.IsDesc ? list.OrderByDescending(x => sortProperty.GetValue(x, null)).ToList() : list.OrderBy(x => sortProperty.GetValue(x, null)).ToList();
+			if (string.IsNullOrEmpty(matchedPropertyName))
+			{
+				matchedPropertyName = "Name";
+			}
 
-            return new PagedList<RoleViewModel>(list, roleRequestListViewModel.Skip ?? CommonConstants.Config.DEFAULT_SKIP, roleRequestListViewModel.Take ?? CommonConstants.Config.DEFAULT_TAKE);
-        }
+			var type = typeof(RoleViewModel);
+			var sortProperty = type.GetProperty(matchedPropertyName);
 
-        public async Task<RoleViewModel> GetRoleByNameAsync(string name)
-        {
-            var role = await _roleRepository.FetchFirstAsync(x => x.Name == name);
-            if (role == null)
-            {
-                return null;
-            }
-            else
-            {
-                return new RoleViewModel(role);
-            }
-        }
+			list = roleRequestListViewModel.IsDesc ? list.OrderByDescending(x => sortProperty.GetValue(x, null)).ToList() : list.OrderBy(x => sortProperty.GetValue(x, null)).ToList();
 
-        #region Private Methods
+			return new PagedList<RoleViewModel>(list, roleRequestListViewModel.Skip ?? CommonConstants.Config.DEFAULT_SKIP, roleRequestListViewModel.Take ?? CommonConstants.Config.DEFAULT_TAKE);
+		}
 
-        public IQueryable<Role> GetAll()
-        {
-            return _roleRepository.GetAll().Where(x => !x.RecordDeleted);
-        }
+		public async Task<RoleViewModel> GetRoleByNameAsync(string name)
+		{
+			var role = await _roleRepository.FetchFirstAsync(x => x.Name == name);
+			if (role == null)
+			{
+				return null;
+			}
+			else
+			{
+				return new RoleViewModel(role);
+			}
+		}
 
-        private List<string> GetAllPropertyNameOfViewModel()
-        {
-            var userViewModel = new RoleViewModel();
-            var type = userViewModel.GetType();
+		public async Task<IEnumerable<RoleViewModel>> GetRoleAdmin()
+		{
+			var list = await GetAll().Where(x => x.Id == RoleConstants.SuperAdminId || x.Id == RoleConstants.AdminId)
+				.Select(x => new RoleViewModel(x)).ToListAsync();
+			return list;
+		}
 
-            return ReflectionUtilities.GetAllPropertyNamesOfType(type);
-        }
+		#region Private Methods
 
-        #endregion
-    }
+		public IQueryable<Role> GetAll()
+		{
+			return _roleRepository.GetAll().Where(x => !x.RecordDeleted);
+		}
+
+		private List<string> GetAllPropertyNameOfViewModel()
+		{
+			var userViewModel = new RoleViewModel();
+			var type = userViewModel.GetType();
+
+			return ReflectionUtilities.GetAllPropertyNamesOfType(type);
+		}
+
+		#endregion
+	}
 }

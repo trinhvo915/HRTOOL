@@ -15,6 +15,7 @@ import { connectHubNotificationCalendarReducer } from "./hub.notification.calend
 import { userManagementListReducer } from "./user.management.list.reducer";
 import { roleListReducer } from "./role.list.reducer";
 import { questionListReducer } from "./question.list.reducer";
+import { departmentListReducer } from "./department.list.reducer";
 
 export default combineReducers({
   userList: userListReducer,
@@ -32,5 +33,6 @@ export default combineReducers({
   hubConnectionCalendar: connectHubNotificationCalendarReducer,
   questionList: questionListReducer,
   userManagementList: userManagementListReducer,
-  roleList: roleListReducer
+  roleList: roleListReducer,
+  departmentList : departmentListReducer
 });

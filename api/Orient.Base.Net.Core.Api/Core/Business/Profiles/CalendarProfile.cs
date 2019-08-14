@@ -12,7 +12,10 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Profiles
     {
         public CalendarProfile()
         {
-            CreateMap<CalendarManageModel, Calendar>().ForMember(x => x.UserInCalendars, y => y.MapFrom(u => u.UserIds.Select(z => new UserInCalendar { UserId = z }).ToList()));
+            CreateMap<CalendarManageModel, Calendar>()
+                .ForMember(x => x.UserInCalendars, 
+                    y => y.MapFrom(u => u.UserIds.Select(z => new UserInCalendar { UserId = z })
+                .ToList()));
         }
     }
 }

@@ -139,10 +139,16 @@ class CategoryListPage extends Component {
     };
 
     deleteCategory = async () => {
+        const { itemId, isDesc, sortName } = this.state;
         try {
-            await Api.deleteCategory(this.state.itemId);
+            await Api.deleteCategory(itemId);
+            if (this.props.categoryList.categoryList.sources.length === 1) {
+                this.setState({
+                    params: { ...this.state.params, skip: this.props.categoryList.categoryList.pageIndex - 1 }
+                })
+            }
+            this.getCategoryList(isDesc, sortName);
             this.toggleDeleteModal();
-            this.getCategoryList();
             toastSuccess("The job category has been deleted successfully");
         } catch (err) {
             toastError(err);

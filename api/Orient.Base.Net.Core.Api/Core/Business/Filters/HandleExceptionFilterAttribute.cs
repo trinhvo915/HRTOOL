@@ -29,7 +29,7 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Filters
         /// </summary>
         /// <param name="context"></param>
         public override void OnException(ExceptionContext context)
-        {
+            {
             if (context.Exception is DbUpdateException)
             {
                 HandleDbUpdateException(context);
@@ -59,7 +59,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Filters
         {
             _logger.LogError(context.Exception, "DbUpdate Exception");
             context.HttpContext.Response.StatusCode = 500;
-            // TODO: It's better to have errorCode in the response
             // For automation test, for front-end mapping
             context.Result = new JsonResult(context.Exception.Message);
         }
@@ -68,7 +67,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Filters
         {
             _logger.LogError(context.Exception, "Business Exception");
             context.HttpContext.Response.StatusCode = 400;
-            // TODO: It's better to have errorCode in the response
             // For automation test, for front-end mapping
             context.Result = new JsonResult(context.Exception.Message);
         }
@@ -82,14 +80,12 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Filters
                 if (databaseException != null && databaseException.ExceptionType == DatabaseExceptionType.EntityNotFound)
                 {
                     context.HttpContext.Response.StatusCode = 404;
-                    // TODO: It's better to have errorCode in the response
                     // For automation test, for front-end mapping
                     context.Result = new JsonResult(context.Exception.Message);
                 }
                 else
                 {
                     context.HttpContext.Response.StatusCode = 500;
-                    // TODO: It's better to have errorCode in the response
                     // For automation test, for front-end mapping
                     context.Result = new JsonResult(context.Exception.Message);
                 }
@@ -98,7 +94,6 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Filters
             {
                 _logger.LogError(context.Exception, "Error Exception");
                 context.HttpContext.Response.StatusCode = 500;
-                // TODO: It's better to have errorCode in the response
                 // For automation test, for front-end mapping
                 context.Result = new JsonResult(context.Exception.Message);
             }

@@ -16,13 +16,13 @@ import { getJobList } from "../../../actions/job.list.action";
 import { getUserList } from "../../../actions/user.list.action";
 import { getAllCategoryListNoFilter } from "../../../actions/category.list.action";
 import { getCommentList } from "../../../actions/comment.list.action";
+import SelectInput from "../../../components/common/select.input"
 import Pagination from "../../../components/pagination/Pagination";
 import ModalConfirm from "../../../components/modal/modal.confirm";
 import ModalInfo from "../../../components/modal/modal.info";
 import ValidationInput from "../../../components/common/validation.input";
 import { pagination } from "../../../constant/app.constant";
 import MultipleSelect from "../../../components/common/multiple.select";
-import SelectInput from "../../../components/common/select.input";
 import InputField from "../../../components/common/input.field";
 import DatetimeSelect from "../../../components/common/datetime.select";
 import CommentItem from "../../../components/common/comment.item";
@@ -61,7 +61,9 @@ class JobListPage extends Component {
             isOpen: false,
             isOpenInputAddStep: false,
             usesIdBefores: [],
-            stepValue: ""
+            stepValue: "",
+            isRepeatCheck: false,
+            isDisable: false
         };
         this.handleChangeStart = this.handleChangeStart.bind(this);
         this.handleChangeEnd = this.handleChangeEnd.bind(this);
@@ -70,14 +72,18 @@ class JobListPage extends Component {
     }
 
     toggleModalInfo = (item, title, isOpen = false) => {
+        let isDisabled = item && item.id ? true : false;
+        console.log(isDisabled)
         this.setState(prevState => ({
             isShowInfoModal: !prevState.isShowInfoModal,
             item: item || {},
             formTitle: title,
             stepItem: [],
             activeTab: '1',
-            isOpen
+            isOpen,
+            isDisabled
         }));
+
     };
 
     toggleDeleteModal = () => {
@@ -107,9 +113,10 @@ class JobListPage extends Component {
             dateStart: new Date(),
             dateEnd: null,
             status: 1,
-            priority: 2,
+            priority: 1,
             reporterId
         };
+
         this.toggleModalInfo(job, title);
     };
 
@@ -260,6 +267,7 @@ class JobListPage extends Component {
 
     async updateJob() {
         const job = Object.assign({}, this.state.item);
+        console.log(this.state.item);
         const { isDesc, sortName } = this.state;
         const { attachments } = job;
 
@@ -319,6 +327,7 @@ class JobListPage extends Component {
 
         await this.setState({
             usesIdBefores: usesIdBefores
+            // isDisabled: !this.state.item.isDisabled
         });
         // end-real-time-notification
 
@@ -436,7 +445,7 @@ class JobListPage extends Component {
     getCommentList = async (jobId, users, load) => {
         let title = "Comment"
         var params = Object.assign({}, {
-            isDesc: true
+            isDesc: false
         });
         var commentItem = await CommentApi.getCommentList(jobId, params);
         this.setState({
@@ -446,8 +455,14 @@ class JobListPage extends Component {
                 ...commentItem
             }
         },
-            () => this.toggleModalComment(commentItem, title, load)
+            () => { this.toggleModalComment(commentItem, title, load)}
         )
+        this.scrollHeight();
+    }
+
+    scrollHeight = () => {
+        var el = document.getElementById('scroll');
+        el.scrollTop = el.scrollHeight;
     }
 
     toggleModalComment = (comment, title, load = true) => {
@@ -466,7 +481,7 @@ class JobListPage extends Component {
         // real-time-notification
         this.props.hubConnectionCalendar.on('Receive', (nameSender, idUsers, secalendarDescription, type) => {
             if (type === appConfig.comment_add || type === appConfig.comment_update) {
-                this.getCommentList(jobId, users);
+                this.getCommentList(jobId, users,false);
             }
         });
         // end-real-time-notification
@@ -474,6 +489,7 @@ class JobListPage extends Component {
 
     async updateItem(content) {
         const { jobId, users } = this.state.commentItem;
+        console.log(this.state.commentItem);
         let params = {
             users,
             jobId,
@@ -592,7 +608,8 @@ class JobListPage extends Component {
             this.setState(prevState => ({
                 item: job.data || {},
                 stepItem: [],
-                isOpenInputAddStep: false
+                isOpenInputAddStep: false,
+                stepValue: ""
             }));
         } catch (error) {
 
@@ -604,6 +621,7 @@ class JobListPage extends Component {
             await StepApi.updateStep(data);
             this.getJobById(data.jobId);
             toastSuccess("Step of job has been updated successfully");
+            this.getJobList();
             return true;
         } catch (error) {
 
@@ -623,6 +641,7 @@ class JobListPage extends Component {
                 try {
                     await StepApi.addStep(params);
                     await this.getJobById(id);
+                    // this.getJobList();
                     toastSuccess("Step of job has been created successfully")
                 } catch (error) {
 
@@ -631,7 +650,8 @@ class JobListPage extends Component {
         }
         if (e.keyCode === 27) {
             this.setState({
-                isOpenInputAddStep: false
+                isOpenInputAddStep: false,
+                stepValue: ""
             })
         }
     }
@@ -653,6 +673,7 @@ class JobListPage extends Component {
             try {
                 await StepApi.addStep(params);
                 await this.getJobById(id);
+                this.getJobList();
                 toastSuccess("Step of job has been created successfully")
             } catch (error) {
 
@@ -662,7 +683,8 @@ class JobListPage extends Component {
 
     onClickCancelStep = () => {
         this.setState({
-            isOpenInputAddStep: false
+            isOpenInputAddStep: false,
+            stepValue: ""
         })
     }
 
@@ -696,8 +718,18 @@ class JobListPage extends Component {
         this.setState({ item: { ...this.state.item, priority: value } });
     }
 
+    onChangeRepeatJob = (e) => {
+        this.setState({
+            isRepeatCheck: !this.state.isRepeatCheck,
+            item: { ...this.state.item, isDisable: !this.state.isRepeatCheck }
+        },
+            () => console.log(this.state.item)
+        )
+
+    }
+
     render() {
-        const { isShowDelStepModal, isShowDeleteModal, isShowDelCommentModal, isShowInfoModal, isShowCommentModal, item, userIdLogin, isOpen, stepItem, isOpenInputAddStep, stepValue } = this.state;
+        const { isShowDelStepModal, isShowDeleteModal, isShowDelCommentModal, isShowInfoModal, isShowCommentModal, item, userIdLogin, isOpen, stepItem, isOpenInputAddStep, stepValue, isRepeatCheck, isDisabled } = this.state;
         const { jobList } = this.props.jobList;
         const { sources, pageIndex, totalPages } = jobList;
         const { userList } = this.props.userList;
@@ -817,6 +849,7 @@ class JobListPage extends Component {
                                         <Row>
                                             <Col xs="6">
                                                 <SelectInput
+                                                    disabled={true}
                                                     name="status"
                                                     title="Status"
                                                     nameField="nameField"
@@ -838,6 +871,8 @@ class JobListPage extends Component {
                                                         }
                                                     ]}
                                                 />
+
+
                                             </Col>
 
                                             <Col xs="6">
@@ -909,7 +944,7 @@ class JobListPage extends Component {
 
                                         <MultipleSelect
                                             name="userIds"
-                                            title="Users receive job"
+                                            title="Assigned Users"
                                             labelField="name"
                                             valueField="id"
                                             options={userList}
@@ -957,6 +992,32 @@ class JobListPage extends Component {
                                             value={item.description}
                                             onChange={this.onModelChange}
                                         />
+
+                                        <FormGroup>
+                                            <Label for="exampleEmail">Is Repeat Job</Label>
+                                            <Row>
+                                                <Col xs="2">
+                                                    <label className="switch switch-label switch-pill switch-outline-primary-alt">
+                                                        <input className="switch-input" type="checkbox" onChange={this.onChangeRepeatJob} checked={!item.isDisable} />
+                                                        <span className="switch-slider" data-checked="✓" data-unchecked="✕" ></span>
+                                                    </label>
+                                                </Col>
+                                                {
+                                                    !item.isDisable ?
+                                                        <Col xs="10">
+                                                            <InputField
+                                                                disabled={isDisabled}
+                                                                name="dateRepeat"
+                                                                type="number"
+                                                                value={item.dateRepeat}
+                                                                onChange={this.onModelChange}
+                                                                placeholder="Enter a number"
+                                                            />
+                                                        </Col> : ""
+                                                }
+                                            </Row>
+                                        </FormGroup>
+
                                         {
                                             !isOpen ?
                                                 <FormGroup id="form-step">
@@ -1120,10 +1181,7 @@ class JobListPage extends Component {
                                                         <div key={++idx} style={{ "textAlign": "left" }} >
                                                             {idx}.&nbsp;
                                                             <a href={attachment.link} target="_blank" rel="noopener noreferrer" download>
-                                                                {attachment.extension === '.jpg' ||
-                                                                    attachment.extension === '.jpeg' ||
-                                                                    attachment.extension === '.png' ?
-                                                                    <img src={attachment.link} alt="Resume" width="80" /> : attachment.fileName}
+                                                                {`${attachment.fileName}${attachment.extension}`}
                                                             </a><br />
                                                         </div>)}
                                             </td>
@@ -1136,7 +1194,7 @@ class JobListPage extends Component {
                                                     onClick={() => this.showConfirmDelete(itemData.id)} />
                                                 <Button
                                                     className="btn btn-primary fa fa-comment-o"
-                                                    onClick={() => this.showComment(itemData.id)}
+                                                    onClick={() => this.showComment(itemData.id, itemData.users)}
                                                 />
                                             </td>
                                         </tr>

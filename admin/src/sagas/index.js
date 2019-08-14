@@ -16,6 +16,7 @@ import { watchTechnicalSkillListSagaAsync } from "./technical.skill.list.saga";
 import { watchConnectHubNotificationCalendarAsync } from "./hub.notification.calendar.saga";
 import { watchUserManagementListSagasAsync } from "./user.management.list.saga";
 import { watchRoleListSagasAsync } from "./role.list.saga";
+import { watchDepartmentSagaAsync } from "./department.list.saga";
 
 export default function* sagas() {
   yield all([
@@ -34,6 +35,7 @@ export default function* sagas() {
     fork(watchTechnicalSkillListSagaAsync),
     fork(watchConnectHubNotificationCalendarAsync),
     fork(watchUserManagementListSagasAsync),
-    fork(watchRoleListSagasAsync)
+    fork(watchRoleListSagasAsync),
+    fork(watchDepartmentSagaAsync),
   ]);
 }

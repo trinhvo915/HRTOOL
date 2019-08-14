@@ -37,14 +37,15 @@ export default class FullCalendarCustom extends Component {
   }
 
   getEvents = (calendars) => {
+    const { currentUserId } = this.props;
     const events = calendars.map(element => {
       return {
         title: element.calendarType.name,
         start: new Date(element.dateStart),
         end: new Date(element.dateEnd),
         ...element,
-        color: '#c2dff5',
-        textColor: '#004377'
+        color: currentUserId === element.reporter.id ? '#f1a2a2' : '#c2dff5',
+        textColor: '#000000;border:none;font-weight:bold;font-size:10px;font-style:italic;'
       }
     });
     return events;

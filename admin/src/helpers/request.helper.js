@@ -125,4 +125,27 @@ export default class RequestHelper {
         throw e;
       });
   }
+
+  static async getByToken(token, apiUrl, params) {
+    const header = {
+      accept: "application/json",
+      contentType: "application/json",
+      "x-access-token": token
+    }
+    return instance
+      .get(apiUrl, {
+        headers: header,
+        params,
+        paramsSerializer: params => {
+          return qs.stringify(params, { arrayFormat: "repeat" });
+        }
+      })
+      .then(data => {
+        return data.data;
+      })
+      .catch(e => {
+        handleError(e);
+        throw e;
+      });
+  }
 }

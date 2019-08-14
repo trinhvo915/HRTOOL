@@ -21,14 +21,9 @@ namespace Orient.Base.Net.Core.Api.Core.Business.Models.Interviews
                 DateStart = interview.Calendar.DateStart;
                 DateEnd = interview.Calendar.DateEnd;
                 Interviewer = string.Join(",", (interview.Calendar.UserInCalendars
-                              .Where(x => x.User.UserInRoles.Any(y => y.RoleId == RoleConstants.DevId))
                               .Select(x => x.User.Name)
                               .ToArray()));
                 Candidate = interview.Candidate.Name;
-                HumanResources = string.Join(",", (interview.Calendar.UserInCalendars
-                                .Where(x => x.User.UserInRoles.Any(y => y.RoleId == RoleConstants.HRId || y.RoleId == RoleConstants.HRMId))
-                                .Select(x => x.User.Name)
-                                .ToArray()));
                 Description = interview.Calendar.Description;
                 Status = interview.Status.ToString();
 

@@ -16,6 +16,7 @@ namespace Orient.Base.Net.Core.Api.Controllers
 {
     [Route("api/users")]
     [EnableCors("CorsPolicy")]
+    [ValidateModel]
     public class UserController : BaseController
     {
         private readonly IUserService _userService;
@@ -47,19 +48,19 @@ namespace Orient.Base.Net.Core.Api.Controllers
             return Ok(users);
         }
 
-        [HttpGet("hrs")]
-        public async Task<IActionResult> GetAllUserHR(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+        [HttpGet("hr-tree")]
+        public async Task<IActionResult> GetHRTree(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
         {
-            var users = await _userService.GetAllUserHRAsync(baseRequestGetAllViewModel);
+            var users = await _userService.GetHRTree(baseRequestGetAllViewModel);
             return Ok(users);
         }
 
-        [HttpGet("interviewers")]
-        public async Task<IActionResult> GetAllUserInterviewer(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
-        {
-            var users = await _userService.GetAllUserInterviewerAsync(baseRequestGetAllViewModel);
-            return Ok(users);
-        }
+        //[HttpGet("interviewers")]
+        //public async Task<IActionResult> GetAllUserInterviewer(BaseRequestGetAllViewModel baseRequestGetAllViewModel)
+        //{
+        //    var users = await _userService.GetAllUserInterviewerAsync(baseRequestGetAllViewModel);
+        //    return Ok(users);
+        //}
 
         [HttpGet("interviews")]
         [CustomAuthorize]
