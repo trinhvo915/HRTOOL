@@ -128,6 +128,8 @@ namespace Orient.Base.Net.Core.Api
             var conn = Configuration.GetConnectionString("DefaultConnectionString");
             services.AddDbContextPool<OrientNetCoreDbContext>(options => options.UseSqlServer(conn));
 
+            //services.AddScoped<IRepository<>, Repository<>>();
+            
             //Register Repository
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 
