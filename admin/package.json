@@ -84,7 +84,7 @@
     "simple-line-icons": "^2.4.1",
     "slick-carousel": "^1.8.1",
     "uuid": "^3.3.2",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.0",
